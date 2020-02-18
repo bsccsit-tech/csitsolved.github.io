@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>C Programming all notes</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="WebUni Education Template">
+	<meta name="keywords" content="
+Arithmetic Operator,
+Increment /Decrement Operator,
+Binary Arithmetic Operators,
+Operator Precedence and and use od Parentheses,
+Precedence of operators,
+Relational Operators,
+Logical Operators,
+Precedence of Logical Operators,
+The Assignment Operator,
+Compound Assignment Operators,
+The Conditional Operator,
+Special Operator: The Comma Operator,
+The Cast operator: Explicit type conversion,
+Bitwise Operators,
+Bitwise Logical operators,
+Bitwise AND,
+Bitwise OR,
+Bitwise Exclusive OR,
+Bitwise Shift operators,
+The right shift operator,
+The one’s complement operator">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							
+						
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/3.jpg">
+		<div class="container">
+			<div class="site-breadcrumb">
+				
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	
+	<!-- search section end -->
+
+
+	<!-- Page  -->
+	<section class="blog-page spad pb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9">
+					<!-- blog post -->
+					<div class="blog-post">
+						<img src="img/categories/2.jpg" alt="">
+						<h3>C Programming </h3>
+						<div class="blog-metas">
+							<div class="blog-meta author">
+								<div class="post-author set-bg" data-setbg="img/authors/1.jpg"></div>
+								<a href="#">HGC Sir</a>
+							</div>
+							<div class="blog-meta">
+								<a href="#">Development</a>
+							</div>
+						</div>
+						
+						
+						
+						<p>
+						
+						
+						<div class="row">
+			<h1>Operators and Expression</h1>
+							<a href="#downloadc4">Looking for pdf ? Go to download. Click me !!</a>
+		</div>
+			
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+						<a id="Arithmetic Operator"></a>
+			<div class="courses_row">
+				<br>
+				<h3> Arithmetic Operator </h3>
+				<p>
+				Arithmetic operators in C are used to perform mathematical
+operations such as addition ,subtraction,multiplication etc.<br>
+• Arithmetic operators are divided in two parts:<br>
+– Unary arithmetic operators : operators taking only one
+operand<br>
+– Binary arithmetic operators : operators taking two operands.
+				</p>
+			</div>
+			
+			
+			<a id="Increment /Decrement Operator"></a>
+			
+			<div class="courses_row">
+				
+			<br>	<h3> Increment /Decrement Operator </h3>
+				<p>
+				The increment and decrement operators can be used only with
+integer variables, not with constants.<br>
+• The operation performed is to add one to or subtract one from the
+operand.<br>
+• In other words, the statements : ++x; --y;<br>
+are the equivalent of these statements: x = x + 1;<br>
+y = y - 1;<br>
+• Note that either unary operator can be placed before its operand
+(prefix mode) or after its operand (postfix mode).<br>
+• These two modes are not equivalent. They differ in terms of when
+the increment or decrement is performed:<br>
+					
+				<br>	When used in prefix mode, the increment and decrement
+operators modify their operand before it's used.<br>
+x = 10; y = ++x;<br>
+Here value of x is incremented first i.e. x becomes 11 and the
+incremented value is assigned to y.<br>
+• So after execution of those statement x and y both have value 11.<br>
+• When used in postfix mode, the increment and decrement
+operators modify their operand after it's used.<br>
+• For example : Consider following statements:<br>
+x = 10; y = x++;<br>
+• After these statements are executed, x has the value 11, and y
+has the value 10.<br>
+• The value of x was assigned to y, and then x was incremented<br>
+					
+					Example:<br>
+#include < stdio.h><br>
+int a, b;<br>
+main()<br>
+{<br>
+/* Set a and b both equal to 5 */<br>
+a = b = 5;<br>
+/* Print them, decrementing each time. */<br>
+/* Use prefix mode for b, postfix mode for a */<br>
+printf("\n%d %d", a--, --b);<br>
+printf("\n%d %d", a--, --b);<br>
+printf("\n%d %d", a--, --b);<br>
+printf("\n%d %d", a--, --b);<br>
+printf("\n%d %d\n", a--, --b);<br>
+return 0;<br>
+}<br>
+					
+					output:<br>
+5 4<br>
+4 3<br>
+3 2<br>
+2 1<br>
+1 0<br>
+				</p>
+			</div>
+			
+			<a id="Binary Arithmetic Operators"></a>
+			
+			<div class="courses_row">
+				
+			<br>	<h3> Binary Arithmetic Operators </h3>
+				<p>
+				C language has five binary arithmetic operators. Following table
+includes the binary arithmetic operators.<br>
+					
+			<br>		The first four operators listed in Table should be familiar to us in general mathematics.
+The fifth operator, modulus operator returns the remainder when the first operand is
+divided by the second operand. For example, 11 modulus 4 equals 3 . Here are some
+more examples: 100 %9 equals 110 %5 equals 0 40 % 6 equals 4<br>
+
+<br>#include < stdio.h> /* Example of Binary arithmetic operators */<br>
+main()<br>
+{<br>
+int a,b,r; float r1;<br>
+printf("Enter First integers:"); /* Input two integers */<br>
+scanf("%d",&a);<br>
+printf("Enter Second integer:");<br>
+scanf("%d",&b);<br>
+r=a+b;<br>
+printf(“\nSum of %d and %d = %d",a,b,r);<br>
+r=a-b;<br>
+printf("\nDifference of %d and %d = %d",a,b,r);<br>
+r=a*b;<br>
+printf("\nProduct of %d and %d= %d",a,b,r);<br>
+r1=a/b;<br>
+printf("\nThe Quotient = %f",r1);<br>
+r=a%b;<br>
+printf("\nThe remainder = %d",r);<br>
+return 0;<br>
+}<br>
+Output<br>
+Enter First integers:34<br>
+Enter Second integer:7<br>
+Sum of 34 and 7 = 41<br>
+Difference of 34 and 7 = 27<br>
+Product of 34 and 7= 238<br>
+The Quotient = 4.000000<br>
+The remainder = 6<br>
+
+				</p>
+			</div>
+			
+			
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			<a id="Operator Precedence and and use od Parentheses"></a>
+						
+			<div class="courses_row">
+				
+			<br>	<h3> Operator Precedence and and use od Parentheses </h3>
+				<p>
+			<br>	Operator Precedence is the order in which operations are performed.
+• In an expression that contains more than one operator, then the
+precedence plays the important role for evaluation.<br>
+e.g. x = 4 + 5 * 3;<br>
+• Performing the addition first results in the following, and x is assigned the
+value 27 as below:<br>
+x = 9 * 3;<br>
+• if the multiplication is performed first, x is assigned the value 19:<br>
+x = 4 + 15;<br>
+• So some rules are needed about the order in which operations are
+performed.<br>
+• When an expression is evaluated, operators with higher precedence are
+performed first. Following Table lists the precedence of C's mathematical
+operators.<br>
+				</p>
+			</div>
+			
+			
+			<a id="Precedence of operators"></a>
+			
+			
+			<div class="courses_row">
+				
+			<br>	<h3> Precedence of operators: continued……. </h3>
+				<p>
+			<br>	In any C expression, operations are performed in the following order:
+Unary increment and decrement<br>
+Multiplication, division, and modulus<br>
+Addition and subtraction<br>
+• If an expression contains more than one operator with the same precedence level, the
+operators are performed in left-to-right order as they appear in the expression called
+associativity of operator. For example, in the following expression, the % and * have the
+same precedence level, but the % is the leftmost operator, so it is performed first:
+12 % 5 * 2<br>
+• A sub-expression enclosed in parentheses is evaluated first, ignoring to operator
+precedence. Thus, we could write x = (4 + 5) * 3;<br>
+• The expression 4 + 5 inside parentheses is evaluated first, so the value assigned to x is 27.<br>
+• We can use multiple and nested parentheses in an expression. When parentheses are
+nested, evaluation proceeds from the innermost expression outward. Look at the
+following complex expression:<br>
+x = 25 - (2 * (10 + (8 / 2)));<br>
+• The evaluation of this expression proceeds as follows:<br>
+1. The innermost expression, 8 / 2, is evaluated first, yielding the value 4: 25 - (2 * (10 + 4))<br><br>
+2. Moving outward, the next, 10 + 4, is evaluated, yielding the value 14: 25 - (2 * 14)<br>
+3. The last, or outermost, expression, 2 * 14, is evaluated, yielding the value 28: 25 - 28<br>
+4. The final expression, 25 - 28, is evaluated, assigning the value -3 to the variable x: x = -3<br>
+				</p>
+			</div>
+			
+			
+			<a id="Relational Operators"></a>
+			
+			
+			<div class="courses_row">
+				
+			<br>	<h3>Relational Operators  </h3>
+				<p>
+				• C's relational operators are used to compare expressions, asking questions such
+as, "Is x greater than 100?" or "Is y equal to 0?”<br>
+• An expression containing a relational operator evaluates to either true (1) or
+false (0).<br>
+					
+					<br>An example: Demonstrates the evaluation of relational expressions<br>
+#include < stdio.h><br>
+int a;<br>
+main()<br>
+{<br>
+a = (5 == 5); /* Evaluates to 1 */<br>
+printf("\na = (5 == 5) evaluates a = %d", a);<br>
+a = (5 != 5); /* Evaluates to 0 */<br>
+printf("\na = (5 != 5) evaluatesa = %d", a);<br><br>
+a = (12 == 12) + (5 != 1); /* Evaluates to 1 + 1 */<br>
+printf("\na = (12 == 12) + (5 != 1) evaluates a = %d\n", a);<br>
+return 0;<br>
+}<br>
+Output:<br>
+a = (5 == 5) evaluates a = 1<br>
+a = (5 != 5) evaluates a = 0<br>
+a = (12 == 12) + (5 != 1) evaluates a = 2<br>
+					
+				<br>	The Precedence of Relational Operators<br>
+• The precedence of relational operators determines the order in which they are
+performed in a multiple-operator expression.<br>
+• However, We can use parentheses to modify precedence in expressions that
+use relational operators.<br>
+• First, all the relational operators have a lower precedence than the arithmetic
+operators.<br>
+• Thus, if we write the following, 2 is added to x, and the result is compared to
+y: (x + 2 > y) equivalent to ((x + 2) > y) which is a
+good example of using parentheses for the clarity:<br>
+• There is also a two-level precedence within the relational operators, as shown
+in Table below:<br>
+• Thus, if we write x==y>z it is the same as x==(y>z)because<br>
+C first evaluates the expression y > z, resulting in a value of 0 or 1.<br>
+• Next, C determines whether x is equal to the 1 or 0 obtained in the first step.<br>
+				</p>
+			</div>
+			
+			
+			<a id="Logical Operators"></a>
+			
+			<div class="courses_row">
+				
+			<br>	<h3> Logical Operators </h3>
+				<p>
+			<br>	Sometimes we need to ask more than one relational question at
+once. The logical operators let us combine two or more
+relational expressions into a single expression that evaluates to
+either true or false.<br>
+					
+				<br>	We can create expressions that use multiple logical
+operators. <br>For example, <br>to ask the question "Is x equal to 2,
+3, or 4?"<br> We can write : (x == 2) || (x == 3) || (x == 4)
+• The logical operators often provide more than one way to ask
+a question.<br>
+• If x is an integer variable, the preceding question also could be
+written in either of the following ways:<br>
+1. (x > 1) && (x < 5)<br>
+2. (x >= 2) && (x <= 4)<br>
+				</p>
+			</div>
+			
+			
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			
+						<a id="Precedence of Logical Operators"></a>
+			<div class="courses_row">
+				
+				<h3> Precedence of Logical Operators </h3>
+				<p>
+				Among the logical operators Not (!) has the highest precedence, AND (&&) has next
+highest and OR(||) has lowest precedence.<br>
+• The ! operator has a precedence equal to the unary mathematical operators ++ and --.
+• Thus, ! has a higher precedence than all the relational operators and all the binary
+mathematical operators.<br>
+• The && and || operators have much lower precedence, lower than all the mathematical
+and relational operators, although, && has a higher precedence than ||.<br>
+• As with all of C's operators, parentheses can be used to modify the evaluation order
+when using the logical operators. Consider the following example:<br>
+• We want to write a logical expression that makes three individual comparisons:
+1. Is a less than b? 2. Is a less than c? 3. Is c less than d?<br>
+• we want the entire logical expression to evaluate to true if condition 3 is true and if
+either condition 1 or condition 2 is true. We can write as a < b || a < c && c < d<br>
+																				  
+																				  
+																	<br>			  An example to demostrate Logical operator precedence.<br>
+#include < stdio.h><br>
+/* Initialize variables. Note that c is not less than d, */<br>
+/* which is one of the conditions to test for. */<br>
+/* Therefore, the entire expression should evaluate as false.*/<br>
+int a = 5, b = 6, c = 5, d = 1;<br>
+int x;<br>
+main()<br>
+{<br>
+/* Evaluate the expression without parentheses */<br>
+x = a < b || a < c && c < d;<br>
+printf("\nWithout parentheses the expression evaluates as %d", x);<br>
+/* Evaluate the expression with parentheses */<br>
+x = (a < b || a < c) && c < d;<br>
+printf("\nWith parentheses the expression evaluates as %d\n", x);<br>
+return 0;<br>
+}<br>
+Output<br>
+Without parentheses the expression evaluates as 1<br>
+With parentheses the expression evaluates as 0<br>
+		</p>
+			</div>
+			
+			
+			<a id="The Assignment Operator"></a>
+			
+			<div class="courses_row">
+				
+			<br>	<h3> The Assignment Operator </h3>
+				<p>
+				The assignment operator is the equal sign (=). Its use in
+programming is somewhat different from its use in
+regular math.<br>
+• If we write x = y; in a C program, it doesn't mean "x
+is equal to y." Instead, it means "assign the value of y
+to x."<br>
+• In a C assignment statement, the right side can be any
+expression, and the left side must be a variable name.
+Thus, the form is as follows:<br>
+variable = expression;<br>
+• When executed, expression is evaluated, and the
+resulting value is assigned to variable.<br>
+• x= x+2; assigns value evaluated by expression x+2 to
+variable x itself.<br>
+				</p>
+			</div>
+			
+			
+			<a id="Compound Assignment Operators"></a>
+			
+			<div class="courses_row">
+				
+			<br>	<h3> Compound Assignment Operators </h3>
+				<p>
+			<br>	C's compound assignment operators provide a shorthand method for
+combining a binary arithmetic operation with an assignment operation.<br>
+• For example, if we want to increase the value of x by 5, or, in other
+words, add 5 to x and assign the result to x. we can write
+x = x + 5;<br>
+• Using a compound assignment operator, which we can think of as a
+shorthand method of assignment, we can write x += 5;<br>
+• In more general notation, the compound assignment operators have the
+following syntax (where op represents a binary operator):
+exp1 op= exp2 This is equivalent to writing
+exp1 = exp1 op exp2;<br>
+				</p>
+			</div>
+			
+			<a id="The Conditional Operator"></a>
+			
+			<div class="courses_row">
+				
+			<br>	<h3> The Conditional Operator </h3>
+				<p>
+			<br>	The conditional operator is C's only ternary operator, meaning
+that it takes three operands. Its syntax is
+exp1 ? exp2 : exp3;<br>
+• If exp1 evaluates to true (that is, nonzero), the entire expression
+evaluates to the value of exp2. If exp1 evaluates to false (that is,
+zero), the entire expression evaluates as the value of exp3.<br>
+• For example, the following statement assigns the value 1 to x if
+exp is true and assigns 100 to x if exp is false:
+x = exp ? 1 : 100;<br>
+• Likewise, to make z equal to the larger of x and y, we can write
+z = (x > y) ? x : y;<br>
+Conditional operator functions somewhat like an if statement. The
+preceding statements could also be written like this:<br>
+if(exp)x = 1; else x=100; and if (x > y) z = x; else z = y;<br>
+				</p>
+			</div>
+			
+			
+			<a id="Special Operator: The Comma Operator"></a>
+			<div class="courses_row">
+				
+				<br><h3> Special Operator: The Comma Operator </h3>
+				<p>
+				• The comma is frequently used in C as a simple punctuation mark, serving to
+separate variable declarations, function arguments, and so on.<br>
+• In certain situations, the comma acts as an operator as we can form an
+expression by separating two sub-expressions with a comma. The result is as
+follows:<br>
+• Both expressions are evaluated, with the left expression being evaluated first.
+The entire expression evaluates to the value of the right expression.<br>
+• For example, the following statement assigns the value of b to x, then increments
+a, and then increments b:
+x = (a++ , b++);<br>
+• Because the ++ operator is used in postfix mode, the value of b, before it is
+incremented, is assigned to x. Using parentheses is necessary because the
+comma operator has low precedence, even lower than the assignment operator.
+• The use of comma operator is used in for looping construct as:<br>
+for(n=1,m=10;n<=m;n++,n++)<br>
+• exchanging values: t = x,x = y,y = t;<br>
+• The other types of special operators used in C are pointer operators(&,*),<br>
+member operators(.and ->),function operator (), array operator []etc.<br>
+					
+					/* An example for Comma operator */<br>
+<br>#include< stdio.h><br>
+main()<br>
+{<br>
+int x,y,a=12,b=15;<br>
+int t;<br>
+x=(a++,b++);<br>
+printf("a=%d,b=%d,x=%d",a,b,x);<br>
+y=(b++,a++,x++);<br>
+printf("\na=%d,b=%d,x=%d,y=%d",a,b,x,y);<br>
+t = x,x = y,y = t;<br>
+printf("\nx=%d,y=%d",x,y);<br>
+getch();<br>
+return 0;<br>
+}<br>
+				</p>
+			</div>
+			
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			<a id="The Cast operator: Explicit type conversion"></a>
+			
+	<div class="courses_row">
+		
+	<br>	<h3> The Cast operator: Explicit type conversion </h3>
+			
+		<p>
+	<br>	• C supports another type of operator for data conversion.
+The cast operator are used to type cast for the data.<br>
+• Once a data are defined as one type and need to convert
+in to another during calculation rather changing the
+actual value of the variable , we need to cast operators.<br>
+• The cast operator is nothing but just the type keyboard
+of the dada type as int,float,double etc.<br>
+• The syntax for type casting is : (type-name)expression
+where type-name is one of the C data type.
+– For example: int x,y ; float z;
+z= float(x)/y; or z = x / (float)y;<br>
+• The expression may be constant, variable or any
+expression.<br>
+		</p>	
+			
+				</div>	
+			<a id="Bitwise Operators"></a>
+			
+				<div class="courses_row">
+		
+	<br>	<h3> Bitwise Operators </h3>
+			
+		<p>
+	<br>	• C has special operators for bit oriented
+programming known as bitwise operators.<br>
+• Bitwise operators in C are used for manipulating
+data in bit level. These are used to testing the bits
+or shifting the bits left or right.<br>
+• Bitwise operators are not applied to float and
+double.<br>
+		</p>	
+			
+				</div>	
+			<a id="Bitwise Logical operators"></a>
+				<div class="courses_row">
+		
+	<br>	<h3> Bitwise Logical operators </h3>
+			
+		<p>
+	<br>	• The three operators & , | , ^ act on integral expressions
+only.<br>
+• The two operands of these operators are operated bit by
+bit.<br>
+		</p>	
+			
+				</div>	
+				<a id="Bitwise AND"></a>
+					<div class="courses_row">
+		
+	<br>	<h3> Bitwise AND (& ) </h3>
+			
+		<p>
+	<br>	The & operator is surrounded by its
+two integral operands. The result of AND operations
+is 1 if both the bit is 1 otherwise 0.<br>
+Example: For 4 byte word machine:<br>
+a = 00000000 00000000 00000000 00001101 ( 13 DEC )<br>
+b= 00000000 00000000 00000000 00011001 ( 25 DEC.)<br>
+• if we execute statement: c=a&b; then<br><br>
+c= 00000000 00000000 00000000 00001001 ( DEC 9)<br>
+		</p>	
+			
+				</div>	
+				<a id="Bitwise OR"></a>
+					<div class="courses_row">
+		
+	<br>	<h3> Bitwise OR ( | ) </h3>
+			
+		<p>
+	<br>	• The | operator is also surrounded by its two
+integral operands. The result of ORing operations
+is 1 if at least one of the bit of its operand is 1
+otherwise 0.<br>
+• Example:<br>
+a = 00000000 00000000 00000000 00001101 (13 D )<br>
+b= 00000000 00000000 00000000 00011001 (25 D)<br>
+• if we execute statement: c=a| b; then<br>
+c= 00000000 00000000 00000000 00011101 ( 29 D)<br>
+		</p>	
+			
+				</div>	
+				<a id="Bitwise Exclusive OR"></a>
+					<div class="courses_row">
+		
+	<br>	<h3> Bitwise Exclusive OR ( ^) </h3>
+			
+		<p>
+	<br>	• The ^ operator is also surrounded by its two
+integral operands. The result of X-OR operations is
+1 if only one of the bit of its operand is 1
+otherwise 0.<br>
+• Example below:<br>
+a = 00000000 00000000 00000000 00001101 (13 D )<br>
+b= 00000000 00000000 00000000 00011001 (25 D)<br>
+• if we execute statement: c=a^b; then<br><br>
+c= 00000000 00000000 00000000 00010100 (20 D)<br>
+			<br>
+		<br>	*Program to demo bitwise logical operators*/<br>
+<br>#include< stdio.h><br>
+main()<br>
+{<br>
+int a=13,b=25,c;<br>
+c=a&b;<br>
+printf("%d&%d=%d",a,b,c);<br>
+c=a|b;<br>
+printf("\n%d|%d=%d",a,b,c);<br>
+c=a^b;<br>
+printf("\n%d^%d=%d",a,b,c);<br>
+return 0;<br>
+}<br>
+		</p>	
+			
+				</div>	
+				<a id="Bitwise Shift operators"></a>
+					<div class="courses_row">
+		
+	<br>	<h3> Bitwise Shift operators </h3>
+			
+		<p>
+	<br>	The shift operators are used to shift the bit of any integral
+expression to the left or right as indicated by the number of
+bits.<br>
+• The left shift operators( <<) : The left shift operator takes
+the form: expr<< n<br>
+• Which causes the bits representation of expr to be shifted
+to the left by the number of places specified by n.<br>
+• The leftmost n bits in the original bit pattern will be lost
+and rightmost n bit positions that are vacated will be filled
+with 0s<br>
+• e.g. 0000 1111<< 2 produces 0011 1100<br>
+• The decimal value of 0000 1111 is 15 and the decimal value
+of 0011 1100 is 60.<br>
+• So left shift by 1, multiply the number by 2. left shift by 2 ,
+multiply the number by 4 and so on ..<br>
+		</p>	
+			
+				</div>	
+				<a id="The right shift operator"></a>
+					<div class="courses_row">
+		
+	<br>	<h3>The right shift operator (>> )  </h3>
+			
+		<p>
+		<br>• The left shift operator takes the form: expr1 >> n which causes
+the bits representation of expr1 to be shifted to the right by the
+number of places specified by n.<br>
+• The rightmost n bits in the original bit pattern will be lost and
+leftmost n bit positions that are vacated will be filled with 0s<br>
+e.g.<br>
+0000 1111>> 2 produces 0000 0011<br>
+• The decimal value of 0000 1111 is 15 and the decimal value of
+0000 0011 is 3 .<br>
+• So right shift by 1 ,divides the number by 2, (integer division) ,
+right shift by 2 bits divides the number by 4.<br>
+		</p>	
+			
+				</div>	
+				
+			<a id="The one’s complement operator"></a>
+			
+			<div class="courses_row">
+				
+			<br>	<h3> The one’s complement operator( ~ )</h3>
+				<p>
+			<br>	• The complement operator ~ is unary
+complementary operator. It inverts the bit
+string representation of its argument, the 0s
+becomes 1s and the 1s become 0s.<br>
+• Consider the example ,<br>
+• a= 9;<br>
+• The bit representation is :<br>
+a = 00000000 00001001<br>
+• b= ~a; becomes: 11111111 11110110<br>
+				</p>
+				</div>
+			
+						
+						<a id="downloadc4"></a>
+						<button type="submit"><a href="https://doc-0k-6k-docs.googleusercontent.com/docs/securesc/2frrppipru5uoajki3r077dap3aqcl7c/36cu6dtdseoqiors4nrcmkt1ul47ibfn/1582017300000/07642160100281731799/07642160100281731799/0BxMsGmAprS6UU01uZmRpbGhNc1g1OExJTXhwOXBoSldkU3Zz?e=download&authuser=0">Download Now !!</a></button>
+						</p>
+						
+						
+					
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-5 col-sm-9 sidebar">
+					
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Unit</h4>
+						<ul>
+							<li><a href="c_programming.html">Problem Solving with Computer</a></li>
+							<li><a href="c_programming2.html"> Elements of C</a></li>
+							<li><a href="c_programming3.html">Input and Output</a></li>
+							<li><a href="c_programming4.html"> Operators and Expression</a></li>
+							<li><a href="c_programming5.html">Control Statemet</a></li>
+						</ul>
+					</div>
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Titles</h4>
+						<ul>
+								<li> <a href="#Arithmetic Operator"><h5>Arithmetic Operator</h5></a>  </li>
+								<li><a href="#Increment /Decrement Operator"><h5>Increment /Decrement Operator</h5></a>   </li>
+								<li> <a href="#Binary Arithmetic Operators"><h5>Binary Arithmetic Operators</h5></a>  </li>
+								<li> <a href="#Operator Precedence and and use od Parentheses"><h5>Operator Precedence and and use od Parentheses</h5></a>  </li>
+								<li>  <a href="#Precedence of operators"><h5>Precedence of operators</h5></a> </li>
+								<li> <a href="#Relational Operators"><h5>Relational Operators</h5></a>  </li>
+								<li> <a href="#Logical Operators"><h5>Logical Operators</h5></a>  </li>
+								<li> <a href="#Precedence of Logical Operators"><h5>Precedence of Logical Operators</h5></a>  </li>
+								<li> <a href="#The Assignment Operator"><h5>The Assignment Operator</h5></a>  </li>
+							<li> <a href="#Compound Assignment Operators"><h5>Compound Assignment Operators</h5> </a> </li>
+								<li> <a href="#The Conditional Operator"><h5>The Conditional Operator</h5></a>  </li>
+								<li> <a href="#Special Operator: The Comma Operator"><h5>Special Operator: The Comma Operator</h5></a>  </li>
+								<li> <a href="#The Cast operator: Explicit type conversion"><h5>The Cast operator: Explicit type conversion</h5> </a> </li>
+								<li>  <a href="#Bitwise Operators"><h5>Bitwise Operators</h5></a> </li>
+								<li> <a href="#Bitwise Logical operators"><h5>Bitwise Logical operators</h5></a>  </li>
+								<li><a href="#Bitwise AND"><h5>Bitwise AND</h5></a>   </li>
+								<li> <a href="#Bitwise OR"><h5>Bitwise OR</h5></a>  </li>
+								<li> <a  href="#Bitwise Exclusive OR"><h5>Bitwise Exclusive OR</h5></a>  </li>
+								<li> <a href="#Bitwise Shift operators"><h5>Bitwise Shift operators</h5></a>  </li>
+								<li> <a href="#The right shift operator"><h5>The right shift operator</h5></a>  </li>
+								<li> <a href="#The one’s complement operator" ><h5>The one’s complement operator</h5> </li>
+								
+							
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer-section spad pb-0">
+		<div class="footer-top">
+			<div class="footer-warp">
+
+				<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+			</div>
+		</div>
+	</footer> 
+	<!-- footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

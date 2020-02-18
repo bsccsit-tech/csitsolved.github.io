@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>C Programming all notes</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="WebUni Education Template">
+	<meta name="keywords" content="Displaying strings in screen,
+Conversion specifications,
+Character Input/Output,
+getc() and putc(),
+The getch() Function,
+The getche() Function,
+Input data with scanf(),
+scanf(),
+String Input with gets(),
+Input strings with scanf()">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/3.jpg">
+		<div class="container">
+			<div class="site-breadcrumb">
+				
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	
+	<!-- search section end -->
+
+
+	<!-- Page  -->
+	<section class="blog-page spad pb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9">
+					<!-- blog post -->
+					<div class="blog-post">
+						<img src="img/categories/2.jpg" alt="">
+						<h3>C Programming </h3>
+						<div class="blog-metas">
+							<div class="blog-meta author">
+								<div class="post-author set-bg" data-setbg="img/authors/1.jpg"></div>
+								<a href="#">HGC Sir</a>
+							</div>
+							<div class="blog-meta">
+								<a href="#">Development</a>
+							</div>
+						</div>
+						<p>
+				<p>
+					
+				<div class="row">
+			<h1>Input and Output</h1>
+					<a href="#downloadc3">Looking for pdf ? Go to download. Click me !!</a>
+		</div>
+			<a id="Displaying strings in screen"></a>
+		
+	<div class="courses_row">
+		<h3> Displaying strings in screen  </h3>
+		<p>
+		The two most frequently used ways to display text strings is to use C's
+library functions printf() and puts().<bR>
+• The printf() Function<br>
+The printf() function, part of the standard C library, is perhaps the most
+versatile way for a program to display data on-screen.<br>
+• Printing a text message on-screen is simple. Call the printf()
+function, passing the desired message enclosed in double quotation
+marks. For example,<br>
+printf("An error has occurred!");<br>
+Displays : An error has occurred!<br>
+• Similarly, puts() functions can also be used to display string in screen
+as:<br>
+puts(“An error has occurred!”);<br>
+• printf() function is used to display the values of variables,constants
+with formatting , but puts only prints text string in screen.<br>
+		
+		</p>
+			</div>
+						
+							
+			<a id="Conversion specifications"></a>
+		<div class="courses_row">
+		<h3> Conversion specifications  </h3>
+		<p>
+		• Displaying the value of program variables in screen is a little
+more complicated than displaying only a message.<br>
+• For example , if we have to display value of an integer variable
+x in screen, we can write as follows:<br>
+printf("The value of x is %d", x);<br>
+• Assume that value at variable x is 15 then the above
+statements display as:<br>
+The value of x is 15<br>
+• In above statement, %d is called the conversion specification
+used for the value of integer variable to be printed at that
+position.<br>
+
+
+		
+		</p>
+			</div>		
+			
+			
+			<div class="courses_row">
+		<h3> A program to display value with format specifier  </h3>
+		<p>
+		
+		/*program */<br>
+#include< stdio.h><br>
+int main()<br>
+{<br>
+int x=10;<br>
+float f=3.56;<br>
+char ch=‘X’;<br>
+printf("Decimal NO x =%d",x);<br>
+printf("\n Octal No x = %o",x);<br>
+printf("\nHex NO x= %X",x);<br>
+printf("\nFloat No f= %G",f);<br>
+printf("\nFloat NO f =%f",f);<br>
+printf("\nFloat No f =%E",f);<br>
+printf("\nSingle Char ch = %c“,ch);<br>
+printf("\nString : %s","C-Program");<br>
+return 0;<br>
+}<br>
+		</p>
+			</div>	
+			
+			<a id="Character Input/Output"></a>
+			<div class="courses_row">
+		<h3>  Character Input/Output </h3>
+		<p>
+		
+		<h4>The getchar() and putchar() Functions</h4>
+• The int getchar(void) function reads the next available
+character from the input buffer and returns it as an
+integer.<br>
+Example: c = getchar( );<br>
+• This function reads only single character at a time. We
+can use this method in the loop in case of reading
+more than one character from the input buffer.<br>
+• The int putchar(int c) function puts the passed
+character on the screen and returns the same
+character.<br>
+Example putchar(c);<br>
+• This function puts only single character at a time. We
+can use this method in the loop in case to display more
+than one character on the screen.<br>
+		</p>
+			</div>	
+			
+			
+			<a id="Reading and writing a character"></a>
+			
+				<div class="courses_row">
+		<h3> Reading and writing a character  </h3>
+		<p>
+		The scanf() and printf() Functions for read and
+write:<br>
+char c= ‘$’; /*declaration of char variable c */<br>
+printf(“%c”,c); /*Prints character $ */<br>
+scanf(“%c”,&c); for input a character in c<br>
+printf(“%c”,c); for output a character in c<br>
+		
+		</p>
+			</div>
+			
+			
+			<a id="getc() and putc()"></a>
+			
+			<div class="courses_row">
+		<h3> getc() and putc() character I/O Function  </h3>
+		<p>
+		
+		Function getc() : It reads a single character from the input and return
+an integer value. If it fails, it returns EOF. The syntax of getc() in C
+language is ,<br>
+int getc(FILE *stream);<br>
+Function putc(): It prints the passed character in screen<br>
+Example of getc() in C language<br>
+#include< stdio.h><br>
+int main ()<br>
+{<br>
+char ch;<br>
+printf("Enter the character: ");<br>
+ch = getc(stdin);<br>
+printf("Character entered: ");<br>
+putc(ch, stdout);<br>
+return(0);<br>
+}<br>
+			Output<br>
+Enter the character: a<br>
+Character entered: a<br>
+		</p>
+			</div>	
+			
+			<a id="The getch() Function"></a>
+						
+			<div class="courses_row">
+		<h3> The getch() Function  </h3>
+		<p>
+		
+		getch(): The function getch() is a non-standard function. It is declared in
+“conio.h” header file.<br>
+• Mostly it is used by Turbo C. It is not a part of C standard library.<br>
+• It immediately returns the entered character without even waiting for
+the enter key.<br>
+• Here is an example of getch() in C language:<br>
+#include < stdio.h><br>
+#include< conio.h><br>
+int main()<br>
+{<br>
+char c;<br>
+printf("Enter the character : ");<br>
+c= getch();<br>
+printf("Entered character : %c", c);<br>
+return 0;<br>
+}<br>
+			Output<br>
+Enter the character :<br>
+Entered character : #<br>
+		</p>
+			</div>	
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>v
+			
+				<a id="The getche() Function"></a>		
+			<div class="courses_row">
+		<h3>  The getche() Function </h3>
+		<p>
+		getche():Like getch(), the getche() function is also a non-standard
+function and declared in “conio.h” header file.<br>
+• It reads a single character from the keyboard and returns it
+immediately without even waiting for enter key.<br>
+• Below is an example of getche() in C language.<br>
+#include < stdio.h><br>
+#include< conio.h><br>
+int main()<br>
+{<br>
+char val;<br>
+printf("Enter the character : ");<br>
+val = getche();<br>
+printf(“ Entered character : %c", val);<br>
+return 0;<br>
+}<br>
+Output<br>
+• Enter the character : s Entered character : s<br>
+		
+		</p>
+			</div>	
+		
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		
+		
+		
+		<a id="Input data with scanf()"></a>
+					
+			<div class="courses_row">
+		<h3> Input data with scanf()  </h3>
+		<p>
+		Most programs need to input data from the keyboard.<br>
+• The most flexible way our program can read numeric data
+from the keyboard is by using the scanf() library function.<br>
+• The scanf() function reads data from the keyboard according
+to a specified format and assigns the input data to one or
+more program variables.<br>
+• Like printf(), scanf() uses a same format string to describe the
+format of the input as<br>
+• For example, the statement scanf("%d", &x);<br>
+reads a decimal integer from the keyboard and assigns it to the
+integer variable x.<br>
+• Likewise, the following statement reads a floating-point value
+from the keyboard and assigns it to the variable rate:<br>
+scanf("%f", &rate);<br>
+		
+		</p>
+			</div>	
+		
+		<a id="scanf()"></a>
+					
+			<div class="courses_row">
+		<h3> scanf()  </h3>
+		<p>
+		The & symbol is C's address-of operator, which specifies the address of the
+variable stated<br>
+• The scanf() requires the & symbol before each numeric variable name in
+its argument list<br>
+• A single scanf() can input more than one value if we include multiple
+conversion specifiers in the format string and variable names (again, each
+preceded by & in the argument list).<br>
+• The following statement inputs an integer value and a floating-point value
+and assigns them to the variables x and rate, respectively:
+scanf("%d %f", &x, &rate);<br>
+• When multiple variables are entered, scanf() uses white space to separate
+input into fields. White space can be spaces, tabs, or new lines.<br>
+• Each conversion specifier in the scanf() format string is matched with an
+input field and the end of each input field is identified by white space.<br>
+• This gives us considerable flexibility. In the preceding scanf(), we could
+enter 10 12.45<br>
+• Or or this: 10<br>
+12.45<br>
+		
+		</p>
+			</div>	
+		
+		
+		
+					
+			<div class="courses_row">
+		<h3> An example of printf()/scanf()  </h3>
+		<p>
+		#include < stdio.h><br>
+Int main()<br>
+{<br>
+float y;<br>
+int x;<br>
+puts( "Enter a float, then an int" );<br>
+scanf( "%f %d", &y, &x);<br>
+printf( "\nYou entered %f and %d ", y, x );<br>
+return 0;<br>
+}<br>
+		Output:<br>
+Enter a float, then an int: 4.56 45<br>
+You entered 4.560000 and 45<br>
+		</p>
+			</div>	
+		
+		
+		
+				<a id="String Input with gets()"></a>	
+			<div class="courses_row">
+		<h3>String Input with gets()   </h3>
+		<p>
+		
+		gets(): The gets() function reads a line from stdin(standard input) into the
+buffer pointed to by string pointer until either a terminating newline or EOF
+(end of file) occurs.<br>
+e.g.<br>
+#include< stdio.h><br>
+int main()<br>
+{<br>
+/* character array of length 100 */<br>
+char str[100]; /* Will discussed later in chapter array in detail */<br>
+printf("Enter a string : ");<br>
+gets( str );<br>
+printf(“You Entered String: ”);<br>
+puts( str );<br>
+return 0;<br>
+}<br>
+			Output:<br>
+Enter a string: patan campus<br>
+You Entered String: patan campus<br>
+		</p>
+			</div>	
+		
+		<a id="Input strings with scanf()"></a>
+					
+			<div class="courses_row">
+		<h3> Input strings with scanf()  </h3>
+		<p>
+		We can use scanf() function to read text string from standard
+input. The syntax of scanf() for reading string literal is as below:<br>
+scanf(“%s”, string_variable);<br>
+Example:<br>
+#include< stdio.h><br>
+int main()<br>
+{<br>
+/* character array of length 100 */<br>
+char str[100]; /* Will discussed later in chapter array in
+detail */<br>
+printf("Enter a string : ");<br>
+scanf("%s",str) ;<br>
+printf("You Entered String: %s",str);<br>
+return 0;<br>
+}<br>
+Note: Unlike gets(), scanf () reads string until any white space
+character is encountered.<br>
+Output:
+Enter a string: Patan<br>
+You Entered String: Patan
+			
+		
+		</p>
+			</div>	
+		
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+						
+			<div class="courses_row">
+		<h3>   </h3>
+		<p>
+		In previous example if we give the input with white space, it takes input
+only up to that white space character , rest is ignored.<br>
+• To read string with white space up to one line, scanf() function can be
+written as:<br>
+scanf("%[^\n]", string_variable) ;<br>
+Example:<br>
+#include< stdio.h><br>
+int main()<br>
+{<br>
+/* character array of length 100 */<br>
+char str[100]; /* Will discussed later in chapter array in detail */<br>
+printf("Enter a string : ");<br>
+scanf("%[^\n]",str) ;<br>
+printf("You Entered String: %s",str);<br>
+return 0;<br>
+}<br>
+Input strings with scanf()<br>
+Output<br>
+Enter a string: Patan Campus<br>
+You Entered String: Patan Campus<br>
+		
+		</p>
+			</div>	
+		
+	
+	
+	
+	
+			
+						
+						</p>	
+			
+			
+			
+			
+			
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			
+			
+			
+			
+			<a id="downloadc3"></a>
+			<button type="submit"><a href="https://doc-0o-6k-docs.googleusercontent.com/docs/securesc/2frrppipru5uoajki3r077dap3aqcl7c/qba6v2ioh94j7ula2aiqegcaj3672m3e/1582017300000/07642160100281731799/07642160100281731799/0BxMsGmAprS6UczlEN2V5QXV5TzI0NTlIcUR0ZjM0ZElMQnZv?e=download&authuser=0">Download Now !!</a></button>
+			
+			
+			
+						</p>
+					
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-5 col-sm-9 sidebar">
+					
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Unit</h4>
+						<ul>
+							<li><a href="c_programming.html">Problem Solving with Computer</a></li>
+							<li><a href="c_programming2.html"> Elements of C</a></li>
+							<li><a href="c_programming3.html">Input and Output</a></li>
+							<li><a href="c_programming4.html"> Operators and Expression</a></li>
+							<li><a href="c_programming5.html">Control Statemet</a></li>
+						</ul>
+					</div>
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Titles</h4>
+						<ul>
+							<li> <a href="#Displaying strings in screen"	><h4>Displaying strings in screen </h4> </a>  </li>
+							<li>  <a href="#Conversion specifications"	><h4>Conversion specifications</h4> </a>  </li>
+							<li> <a href="#Character Input/Output"	><h4>Character Input/Output </h4></a> 
+  </li>
+							<li> <a href="#getc() and putc()"	><h4>getc() and putc() </h4></a> 
+  </li>
+							<li>  <a href="#The getch() Function"	><h4>The getch() Function </h4></a> 
+ </li>
+							<li> <a href="#The getche() Function"	><h4>The getche() Function </h4></a> 
+  </li>
+							<li> <a href="#Input data with scanf()"	><h4>Input data with scanf()</h4></a>  
+  </li>
+							<li> <a href="#scanf()"	><h4>scanf()</h4></a>  
+  </li>
+							<li> <a href="#String Input with gets()"	><h4>String Input with gets()</h4></a>  
+  </li>
+							<li>  <a href="#Input strings with scanf()"	><h4>Input strings with scanf()</h4></a> 
+ </li>
+							
+							
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Page end -->
+
+
+	<!-- banner section -->
+	
+	<!-- banner section end -->
+
+
+	<!-- footer section -->
+	<footer class="footer-section spad pb-0">
+		<div class="footer-top">
+			<div class="footer-warp">
+
+				<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+			</div>
+		</div>
+	</footer> 
+	<!-- footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

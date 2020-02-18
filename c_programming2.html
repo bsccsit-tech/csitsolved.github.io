@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>C Programming all notes</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="WebUni Education Template">
+	<meta name="keywords" content="Elements of C,
+Tokens,
+More about Constants,
+Literal Constants,
+Symbolic Constants,
+Delimiters(special symbols),
+Scape Sequences,
+Data Types,
+Derived Data Types,
+User Defined Data Types,
+Variable,
+Statements,
+Null Statements,
+Compound Statements,
+Expressions,
+Complex Expressions,
+Comments">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							
+						
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/3.jpg">
+		<div class="container">
+			<div class="site-breadcrumb">
+				
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	
+	<!-- search section end -->
+
+
+	<!-- Page  -->
+	<section class="blog-page spad pb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9">
+					<!-- blog post -->
+					<div class="blog-post">
+						<img src="img/categories/2.jpg" alt="">
+						<h3>C Programming </h3>
+						<div class="blog-metas">
+							<div class="blog-meta author">
+								<div class="post-author set-bg" data-setbg="img/authors/1.jpg"></div>
+								<a href="#">HGC Sir</a>
+							</div>
+							<div class="blog-meta">
+								<a href="#">Development</a>
+							</div>
+						</div>
+						<p>
+				<p>
+					
+					
+					<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="row">
+			<h1>Elements of C</h1>
+							
+		</div>
+						<a href="#downloadc2">Looking for pdf ? Go to download. Click me !!</a>
+			<a id="Elements of C"></a>
+	<div class="courses_row">
+		<h3> Elements of C </h3>
+		
+		<p>
+		
+		C Standards( ANSI C and C99)<br>
+• Everything before standardization is generally called "K&R C”. This was "the C
+language" from 1972-1989.<br>
+• The first C standard was released 1989 nationally in USA, by ANSI. This release is
+called C89 or ANSI-C. From 1989-1990 this was "the C language".<br>
+• The year after, the American standard was accepted internationally and
+published by ISO (ISO 9899:1990). This release is called C90. From 1990-1999,
+C90 was "the C language".<br>
+• A minor update was released in 1995, sometimes referred to as "C95". The main
+change was introduction of wide character support.<br>
+• In 1999, the C standard went through a major revision (ISO 9899:1999). This
+version of the standard is called C99. From 1999-2011, this was "the C language".<br>
+• In 2011, the C standard was changed again (ISO 9899:2011). This version is called
+C11. The update had a lot of focus on multi-core, multi-processing and
+expression sequencing. From 2011-2017, this was "the C language".<br>
+• In 2017, C11 was revised and various defect reports were solved. This standard is
+informally called C18 and was released as ISO 9899:2018. It contains no new
+features, just corrections. It is the current version of the C language.<br>
+			
+			
+			<h3>C Character Set (Alphabet of C Language):</h3><br> The characters that
+constitute the C language. These character sets are:<br>
+1. ENGLISH ALPHABETS(Letters)<br>
+Uppercase letters A-Z<br>
+Lowercase letters a-z<br>
+2. DIGITS 0, 1, 2, 3, 4, 5, 6, 7, 8, 9<br>
+3. SPECIAL CHARACTERS<br>
+~ ! @ # $ % ^ & * ( ) _ + = - / < | > ? \ . , ‘ “ : ; [ ] { }<br>
+4. WHITE SPACES<br>
+space bar , tab<br>
+			
+		<a id="Tokens"></a>	
+			
+		<h3>C Tokens :</h3>	 Tokens are basic building blocks of a language. C language
+has following tokens.</h3>
+		<h3>1. Keywords:</h3> are predefined, reserved words in C and each of which is
+associated with specific features. These words help us to use the
+functionality of C language. They have special meaning to the compilers .<br>
+Elements of C<br>
+auto double int struct<br>
+break else long switch<br>
+case enum register typedef<br>
+char extern return union<br>
+continue for signed void<br>
+do if static while<br>
+default goto sizeof volatile<br>
+const float short unsigned<br>
+			
+			
+		<h3>	2. Identifiers :</h3><br>
+• Program elements those are used for naming of variables,
+functions, array , user defined types etc are identifiers.<br>
+• These are user-defined names which consist of alphabets,
+number, underscore ‘_’.<br>
+• Identifier’s name should not be same on the same scope.<br>
+• Keywords cannot not be used as identifiers.<br>
+• Below are the rules for naming C iden?fiers −<br>
+– It must begin with letter or underscore.<br>
+– Only letters, digits and underscore can be used, no other special
+characters, punctuations are allowed.<br>
+– It must not contain white-space.<br>
+– It should not be a keyword.<br>
+– It should be up to 31 characters long.<br>
+• E.g. Valid identifier: x, a1, _xy, a_b , a12x etc,<br>
+• Invalid: int, 1a, $usd, a.b etc.<br>
+Elements of C (Tokens)<br>
+
+			
+			
+		<h3>Operators: </h3>can be defined as symbols that help us to perform
+specific mathematical and logical computations on operands.<br>
+			
+			
+			
+			
+		<h3>Constants:</h3><br>
+• A constant is a literal or data storage location used by our
+program where a value can be stored but can't be changed
+during program execution.<br>
+• Constants in C may be numeric or character constants based
+on their values<br>
+• A constants in C can be divided as literal or symbolic
+constants based on whether it is used directly literal value or
+it is used as the given name in the program<br>
+– E.g.<br>
+#define PI 22/7 , here PI is symbolic which has given value 22/7
+const int PI = 3.14; here PI is symbolic and 3.14 is literal
+		
+		</p>
+			</div>
+					
+			<a id="More about Constants"></a>
+			
+		<div class="courses_row">
+			<h3>More about Constants  </h3>
+			<p>
+			
+			Integer Constants are sequences of digits. There are three types of integers
+namely decimal ,octal and hexadecimal .<br>
+The largest integer value that can be stored is machine-dependent. It is 32767
+on 16 bit machine and 2,147,483,647 on 32-bit machine. But it is also possible
+to store larger integer constants on these machines by appending qualifiers
+such as U,L and UL to the constants.<br>
+e.g.<br>
+• 56789U or 56789u for unsigned integer<br>
+• 987612347UL or 987612347ul for unsigned long integer.<br>
+• 9876543L or 9876543l for long integer.<br>
+• Real Constants are the numbers with fractional parts and optional leading
++ or – symbol.<br>
+e.g. 0.9876 , -9.786 +98.765 etc which are in decimal notation.<br>
+0.65e4 , 1.5e+5 -1.2E-1 etc. in scientific notations.<br>
+• Single Character constants contains a single character enclosed within a
+pair of single quote marks. Example: ‘c’ ‘%’ ‘&’ ‘7’ etc.<br>
+
+<br>
+• A String Constant is a sequence of characters enclosed
+in double quotes. The characters may be letters,
+numbers special characters and blank space.<br>
+Example: “Well come”<br>
+“a”<br>
+“890”<br>
+“*&^%$” etc.<br>
+• In addition C supports some special backslash
+character constants that are used in output functions
+called escape sequences.<br>
+• For example: ‘\n’ for newline, ‘\t’ for tab, ‘\b’ for back
+space, ‘\”’ for double quote ‘\\’ for \ and so on.<br>
+
+
+All the types of above constants can be classified in to two main
+categories.
+	<a id="Literal Constants"></a>			<br>
+<h4> Literal Constants</h4> <br><h4> Symbolic Constants.</h4><br>
+			<h3> Literal Constants</h3>
+• A literal constant is a value that is typed directly into the
+source code wherever it is needed.<br> Here are two examples:
+int count = 20;<br>
+float tax_rate = 0.28;<br>
+• The 20 and the 0.28 are literal constants. The preceding
+statements store these values in the variables count and
+tax_rate.<br>
+• Note that one of these constants contains a decimal point,
+whereas the other does not.<br>
+• The presence or absence of the decimal point distinguishes
+floating-point constants from integer constants.<br>
+
+• A constant starting with the digit 0 is interpreted as
+an octal integer (the base-8 number system).<br>
+• Octal constants can contain the digits 0 through 7
+and a leading minus or plus sign.<br>
+e.g. 065 034 etc.<br>
+• A constant starting with 0x or 0X is interpreted as a
+hexadecimal constant (the base-16 number system).<br>
+• Hexadecimal constants can contain the digits 0
+through 9, the letters A through F, and a leading
+minus or plus sign.<br>
+e.g. 0x9F 0X7C 0xAB etc.<br>
+
+• A literal constant written with a decimal point is a
+floating-point constant and is represented by the C
+compiler as a double-precision number. Floating-point
+constants can be written in standard decimal notation, as
+shown in these examples:<br>
+– 123.456 0.019 100.0<br>
+• Floating-point constants also can be written in scientific
+notation.<br>
+• In C, scientific notation is written as a decimal number
+followed immediately by an E or e and the exponent:<br>
+Examples below-<br>
+• 1.23E2 is 1.23 times 10 to the 2nd power, or 123<br>
+• 4.08e6 4.08 times 10 to the 6th power, or 4,080,000<br>
+• 0.85e-4 0.85 times 10 to the -4th power, or 0.000085<br>
+			
+			</p>
+			</div>
+			<a id="Symbolic Constants"></a>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+				<div class="courses_row">
+			<h3> Symbolic Constants </h3>
+			<p>
+			
+			A symbolic constant is a constant that is represented by a name (symbol) in a
+program.<br>
+• Whenever we need the constant's value in our program, we use its name.
+• The actual value of the symbolic constant needs to be entered only once, when
+it is first defined.<br>
+• Symbolic constants have two significant advantages over literal constants, as the
+following example shows. Suppose that we're writing a program that performs a
+variety of geometrical calculations. The program frequently needs the value ,,
+(3.14159) for its calculation. For example, to calculate the circumference and
+area of a circle with a known radius, we could write<br>
+– circumference = 3.14159 * (2 * radius);<br>
+– area = 3.14159 * (radius)*(radius);<br>
+• If, however, we define a symbolic constant with the name PI and the value 3.14,
+we could write<br>
+– circumference = PI * (2 * radius);<br>
+– area = PI * (radius)*(radius);<br>
+• If we have to change constant literal, just has to change at once in its
+definitions.<br>
+			
+			</p>
+			</div>
+																	<a id="Delimiters(special symbols)"></a>
+					<div class="courses_row">
+			<h3> Elements of C (Tokens) </h3>
+			<p>
+			
+			5.Delimiters(special symbols):<br>
+Delimiters are tokens which are symbols used as
+a separator for variables, statements etc. for
+writing program statements.<br> For example
+comma(,)<br>
+semicolon(;)<br>
+Space<br>
+		<a id="Scape Sequences"></a>	<br>	
+				
+				
+			<h3>	Scape Sequences: </h3><br>The C languages support a concept called
+Escape Sequence. When a character is preceded by a backslash
+(\), it is called an escape sequence and it has a special meaning
+to the compiler. For example, \n in the following statement is a
+valid character and it is called a new line character<br>
+
+					<br>	<h3>Elements of C</h3>
+
+\t Inserts a tab in the text at this point.<br>
+\b Inserts a backspace in the text at this point.<br>
+\a Bell Character(Produce a beep sound)<br>
+\n Inserts a newline in the text at this point.<br>
+\r Inserts a carriage return in the text at this point.<br>
+\f Inserts a form feed in the text at this point.<br>
+\’ Inserts a single quote character in the text at this point.<br>
+\” Inserts a double quote character in the text at this point.<br>
+\\ Inserts a backslash character in the text at this point.<br>
+\? Inserts a question mark characters in the text at this point.<br>
+				
+				
+				
+				<a id="Data Types"></a>
+				
+				
+				
+				<br>
+				
+				
+			<h3>	Data Types:</h3>
+A data type is the type of the value associated with a variable or
+constant. C language supports following data types;<br>
+
+						<h4> Primary(or fundamental) data types</h4>
+<h4> Derived data types</h4>
+<h4> User-defined data types</h4>
+Primary Data types and associated variables :<br>
+There are five basic data types in C associated with variables:
+• int - integer: a whole number.<br>
+• float - floating point value: i.e. a number with a fractional
+part.<br>
+• double - a double-precision floating point value.<br>
+• char - a single character.<br>
+• void – holds no value and used to specify the type of function
+or what it returns.<a id="Derived Data Types"></a><br>
+				
+				
+				
+				
+				
+				
+				<br>
+				
+				
+			<h3>Derived Data Types:</h3>	
+• C supports three derived data types:<br>
+<h4> Arrays:</h4> Arrays are sequences of data items
+having homogeneous values. They have adjacent
+memory locations to store values.<br>
+<h4> Pointers:</h4> Pointers: These are powerful features which are
+used to access the memory and deal with their
+address.<br>
+<h4>References:</h4>  Function pointers allow referencing
+functions with a particular signatures.
+						<a id="User Defined Data Types"></a>
+						<br>
+				
+				
+				
+				
+				
+				
+				<br>	
+				
+				
+			<h3>User Defined Data Types.</h3>	
+			
+• C allows the feature called type definition which allows
+programmers to define their identifier that would represent an
+existing data type
+				<br>
+				
+				
+				
+				<a id="Variable"
+				></a>
+				
+				<br>	
+			<h3>Variable:</h3>
+• A variable is a named data storage location in the computer's
+memory.<br>
+• By using a variable's name in our program, we are, in effect,
+referring to the data stored there.<br>
+• A variable can have different values at different instant of time.
+• Based of the value stored in variable, each variable is defined with
+a data type associated with it.<br>
+• The syntax of declaration of variable in C is:
+– <data type><space><variable name>;<br>
+• e.g. int x; Here int is data type and x is variable(identifier)<br>
+– Similarly, float y; char ch; etc.<br>
+int count, num, my_num; Multiple variable of same type.<br>
+				
+				
+				
+				
+				
+			<a id="Statements"></a>	
+				
+			<br>	
+				
+				
+			<h3>Statements:</h3>	
+• A statement is a complete direction instructing the computer
+to carry out some task.<br>
+• In C, statements are usually written one per line, although
+some statements can span multiple lines.<br>
+• C statements always end with a semicolon (except for
+preprocessor directives such as #define and #include.<br>
+• For example: x = 2 + 3; is an assignment statement. It
+instructs the computer to add 2 and 3 and to assign the result
+to the variable x.<br>
+• printf(“C Programming”); - is a output statement that prints
+the text string written in between “ ” as C Programming
+<br><h3>Statements and White Space :</h3>
+						
+
+• The C compiler isn't sensitive to white space.<br>
+• When the compiler reads a statement in the source code, it
+ignores white space.<br>
+• Thus, the statement x=2+3; is equivalent to this
+statement: x = 2 + 3;<br>
+• It is also equivalent to this:<br>
+x =<br>
+2<br>
++<br>
+3;<br>
+						<h4>Note:</h4>
+ But Within literal string constants, tabs and spaces aren't
+ignored; they are considered part of the string. For example in
+“C Programming Language” the spaces also part of string
+not ignored.<br>
+
+• Literal string constants are strings that are enclosed within quotes
+and interpreted literally by the compiler, space for space.<br>
+• Although it's extremely bad form, the following is legal:<br>
+printf(<br>
+"Hello, world!"<br>
+);<br>
+• Below, however, is not legal:<br>
+printf("Hello,<br>
+world!");<br>
+• To break a literal string constant line, we must use the backslash
+character (\) just before the break.<br>
+• Thus, the following is legal:<br>
+printf("Hello,\<br>
+world!");<br>
+						<a id="Null Statements"></a>
+<br>
+						<h3>Null Statements</h3>
+
+• If we place a semicolon by itself on a line, we create a null statement i.e. a
+statement that doesn't perform any action. This is perfectly legal in C.<br>
+e.g. the null statement is:       ;<br>
+				<a id="Compound Statements"></a>		
+				<br>
+						<h3>Compound Statements</h3>
+
+• A compound statement, also called a block, is a group of two or more C
+statements enclosed in braces. Here's an example of a block:<br>
+{<br>
+printf("Hello, ");<br>
+printf("world!");<br>
+}<br>
+• In C, a block can be used anywhere a single statement can be used. Note that
+the enclosing braces can be positioned in different ways. The following is
+equivalent to the preceding example:<br>
+{printf("Hello, ");<br>
+printf("world!");}<br>
+• But it is recommended to use the braces {} at proper positions so that it's easy to find the
+beginning and end of a block.<br>
+• Don’t spread a single statement across multiple lines if there's no need to do so. Limit
+statement to one line if possible.
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+						<a id="Expressions"></a>
+						<br>
+<br>
+						<h3>Expressions</h3>
+
+• In C, an expression is anything that evaluates to a numeric value. C
+expressions come in all levels of complexity.<br>
+					<h4>Simple Expressions</h4>
+
+• The simplest C expression consists of a single item: a simple variable,
+literal constant, or symbolic constant. Here are four expressions:
+Expression Description<br>
+PI A symbolic constant (defined in the program)<br>
+20 A literal constant<br>
+rate A variable<br>
+-1.25 Another literal constant<br>
+• A literal constant evaluates to its own value.<br>
+• A symbolic constant evaluates to the value it was given when we
+created it using the #define directive or in const statement<br>
+• A variable evaluates to the current value assigned to it by the program.
+						
+						<a id="Complex Expressions"></a>
+<br>
+						<h3>Complex Expressions</h3>
+
+• Complex expressions consist of simpler expressions connected by operators. For
+example: 2 + 8 is an expression consisting of the sub-expressions 2 and 8 and the
+addition operator +. The expression 2 + 8 evaluates 10.<br>
+• We can also write C expressions of great complexity:<br>
+1.25 / 8 + 5 * rate + rate * rate / cost<br>
+• Consider the following statement:<br>
+x = a + 10;<br>
+• This statement evaluates the expression a + 10 and assigns the result to variable x.<br>
+• In addition, the entire statement x = a + 10 is itself an expression that evaluates to
+the value of the variable on the left side of the equal sign.<br>
+• Thus, we can write statements such as the following, which assigns the value of
+the expression a + 10 to both variables, x and y as:<br>
+y = x = a + 10; More Complex expressino<br>
+• We can also write statements such as this:<br>
+x = 6 + (y = 4 + 5);<br>
+• All of these are complex expression.<br>
+						<a id="Comments"></a>
+<br>
+						<h3>Comments</h3>
+
+• Comments are those parts of the source code which are ignored by
+compiler during compilation.<br>
+• In C, comments are anything written between the characters /*
+and */<br>
+e.g. /* This is my First C Program */<br>
+• If multiple lines comments are needed, we can use multiple
+comments each per one line or multi-line single comment using
+the same starting and ending characters
+/*this is my first c program */<br>
+/*this program prints a message hello */<br>
+• Or equivalently these comments can be written as :<br>
+/* this is my first c program<br>
+this program prings a message hello<br>
+*/<br>
+<h3>The First C Program</h3>
+
+/* A C program to pring Hello world */<br>
+#include< stdio.h > /* Std input output header file */<br>
+#include< conio.h> / * console I/O header file */<br>
+main() / * main function */<br>
+{<br>
+printf(“Hello world”);<br>
+getch();<br>
+return 0;<br>
+}<br>
+• After comiplation and execution, the output of program:<br>
+Hello world<br>
+
+			
+			</p>
+			</div>
+						
+						
+						</p>	
+			
+			
+			
+			
+		<a id="downloadc2"></a>
+			<button type="submit"><a href="https://doc-14-6k-docs.googleusercontent.com/docs/securesc/2frrppipru5uoajki3r077dap3aqcl7c/isalakg91o7hjc66jtpm5uvcgkmbcu3j/1582017300000/07642160100281731799/07642160100281731799/0BxMsGmAprS6UYlotZkdnUmdMdGhGUGhPN1hkdFVXaUZRUFlB?e=download&authuser=0">Download Now !!</a></button>
+			
+			
+			
+			
+			
+			
+						</p>
+					
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-5 col-sm-9 sidebar">
+					
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Unit</h4>
+						<ul>
+							<li><a href="c_programming.html">Problem Solving with Computer</a></li>
+							<li><a href="c_programming2.html"> Elements of C</a></li>
+							<li><a href="c_programming3.html">Input and Output</a></li>
+							<li><a href="c_programming4.html"> Operators and Expression</a></li>
+							<li><a href="c_programming5.html">Control Statemet</a></li>
+						</ul>
+					</div>
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Titles</h4>
+						<ul>
+							<li> <a href="#Elements of C"	><h5>  Elements of C </h5> </a> </li>
+							<li> <a href="#Tokens"	><h5> Tokens  </h5> </a>  </li>
+							<li> <a href="#More about Constants"	><h5> More about Constants  </h5> </a>  </li>
+							<li> <a href="#Literal Constants "	><h5>  Literal Constants  </h5></a>   </li>
+							<li>  <a href="#Symbolic Constants"	><h5> Symbolic Constants  </h5></a>  </li>
+							<li>  <a href="#Delimiters(special symbols)"	><h5> Delimiters(special symbols)  </h5> </a> </li>
+							<li>  <a href="#Scape Sequences"	><h5> Scape Sequences  </h5></a>  </li>
+							<li> <a href="#Data Types"	><h5> Data Types  </h5> </a>  </li>
+							<li>  <a href="#Derived Data Types"	><h5> Derived Data Types  </h5> </a> </li>
+							<li> <a href="#User Defined Data Types"	><h5> User Defined Data Types  </h5> </a>  </li>
+							<li> <a href="#Variable"	><h5> Variable  </h5>  </a> </li>
+							<li>  <a href="#Statements"	><h5> Statements  </h5></a>  </li>
+							<li> 	<a href="#Null Statements"	><h5> Null Statements  </h5>  </a> </li>
+							<li> <a href="#Compound Statements"	><h5> Compound Statements  </h5> </a>  </li>
+							<li> <a href="#Expressions"	><h5>Expressions </h5> </a>  </li>
+							<li> <a href="#Complex Expressions"	><h5> Complex Expressions  </h5></a>   </li>
+							<li> <a href="#Comments"	><h5> Comments  </h5> </a>  </li>
+							
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Page end -->
+
+
+	<!-- banner section -->
+	
+	<!-- banner section end -->
+
+
+	<!-- footer section -->
+	<footer class="footer-section spad pb-0">
+		<div class="footer-top">
+			<div class="footer-warp">
+
+				<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+			</div>
+		</div>
+	</footer> 
+	<!-- footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

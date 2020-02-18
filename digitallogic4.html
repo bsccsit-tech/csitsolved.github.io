@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Digital Logic all notes</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="WebUni Education Template">
+	<meta name="keywords" content="Introduction,
+Registers,
+Counters,
+Introduction to Registers,
+Registers With Parallel Load,
+Shift Registers,
+Serial-in to Parallel-out (SIPO) Shift Register,
+Asynchronous (Ripple) Counters,
+2 bit Ripple binary up Counters,
+Binary Ripple Counter,
+BCD Ripple Counter (Decade Counter),
+Synchronous (Parallel) Counters,
+Binary Up-Down Counter,
+Synchronous BCD Counter,
+Counter Design Example,
+Timing Sequences,
+Word-Time Generation,
+Timing Signals,
+Johnson Counter,
+Advantages of Johnson counter,
+Disadvantages of Johnson counter,
+Memory unit,
+Integrated Circuit memory (Binary Cell- BC)">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							
+						
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/3.jpg">
+		<div class="container">
+			<div class="site-breadcrumb">
+				
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	
+	<!-- search section end -->
+
+
+	<!-- Page  -->
+	<section class="blog-page spad pb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9">
+					<!-- blog post -->
+					<div class="blog-post">
+						<img src="img/categories/3.jpg" alt="">
+						<h3>Digital Logic </h3>
+						<div class="blog-metas">
+							<div class="blog-meta author">
+								<div class="post-author set-bg" data-setbg="img/authors/1.jpg"></div>
+								<a href="#">SNM Sir</a>
+							</div>
+							<div class="blog-meta">
+								<a href="#">Electronics</a>
+							</div>
+						</div>
+						
+						
+					<p>
+						<a id="Introduction"></a>
+						<div>
+							<h1>Registers and Counters</h1>
+							<a href="#dowloaddl4">Looking for pfd ? Go to download click me !!</a>
+						<h3> Introduction</h3>
+							
+• Circuits that include flip-flops are usually classified by the
+function they perform. Two such circuits are registers and
+counters.<a id="Registers"></a><br>
+• Registers<br>
+ A group of binary cells (FFs) suitable for holding binary data
+information.<br>
+ In addition to the FFs, a register may have combinational gates
+to control when and how the new information is transferred
+into the register.<br>
+• Counters<br>
+ A register that goes through a predetermined sequence of
+states upon the application of input pulses.<br>
+ The gates in a counter are connected in such a way as to
+produce a predefined sequence of binary states in the register.<br>
+						</div>
+						
+						<div>
+							<a id="Introduction to Registers"></a>
+						<h3>Introduction to Registers  </h3>
+						An n-bit register has a group of n flip-flops and
+some logic gates and is capable of storing n bits of
+information.<br>
+ The flip-flops store the information while the gates
+control when and how new information is
+transferred into the register.<br>
+ Some functions of register:<br>
+ retrieve data from register<br>
+ store/load new data into register (serial or parallel)<br>
+ shift the data within register (left or right)<br>
+							
+							No external gates.<br>
+ Example: A 4-bit register. A new 4-bit data is
+loaded every clock cycle.<br>
+						
+						</div>
+				<a id="Registers With Parallel Load"></a>		
+			<div>
+						<h3>  Registers With Parallel Load</h3>
+						 Instead of loading the register at every clock pulse, we may
+want to control when to load.<br>
+ Loading a register: transfer new information into the register.
+Requires a load control input.<br>
+ Parallel loading: all bits are loaded simultaneously.<br>
+						</div>			
+						<a id="Shift Registers"></a>
+						
+						<div> 
+						
+						<h3>  Shift Registers</h3>
+						 Another function of a register, besides storage, is to provide
+for data movements.<br>
+ Each stage (flip-flop) in a shift register represents one bit of
+storage, and the shifting capability of a register permits the
+movement of data from stage to stage within the register, or
+into or out of the register upon application of clock pulses.<br>
+ A register capable of shifting its binary information either to
+the right or to the left is called a shift register.<br>
+ The logical configuration of a shift register consists of a
+chain of flip-flops connected in cascade, with the output of
+one flip-flop connected to the input of the next flip-flop.<br>
+ All flip-flops receive a common clock pulse that causes the
+shift from one stage to the next.<br>
+
+• Generally, shift registers operate in one of four different modes with
+the basic movement of data through a shift register being:<br>
+• Serial-in to Parallel-out (SIPO) - the register is loaded with serial data,
+one bit at a time, with the stored data being available in parallel form.<br>
+• Serial-in to Serial-out (SISO) - the data is shifted serially "IN" and
+"OUT" of the register, one bit at a time in either a left or right direction
+under clock control.<br>
+• Parallel-in to Serial-out (PISO) - the parallel data is loaded into the
+register simultaneously and is shifted out of the register serially one bit
+at a time under clock control.<br>
+• Parallel-in to parallel-out (PIPO)<br>
+– the parallel data is loaded
+simultaneously into the
+register, and transferred
+together to their respective
+outputs by the same clock pulse.<br>
+						
+						</div>
+						
+						<a id="Serial-in to Parallel-out (SIPO) Shift Register"></a>
+						
+					<div>
+						
+						<h3> Serial-in to Parallel-out (SIPO) Shift
+Register</h3>
+					Accepts data serially.<br>
+ Outputs of all stages are available simultaneously.<br>
+						
+						• Lets assume that all the flip-flops ( FFA to FFD ) have just been RESET
+( CLEAR input ) and that all the outputs Q A to Q D are at logic level “0” ie,
+no parallel data output.<br>
+• If a logic “1” is connected to the DATA input pin of FFA then on the first
+clock pulse the output of FFA and therefore the resulting Q A will be set
+HIGH to logic “1” with all the other outputs still remaining LOW at logic
+“0”.<br>
+• Assume now that the DATA input pin of FFA has returned LOW again to
+logic “0” giving us one data pulse or 0-1-0.<br>
+• The second clock pulse will change the output of FFA to logic “0” and the
+output of FFB and Q B HIGH to logic “1” as its input D has the logic “1”
+level on it from Q A .<br>
+• When the third clock pulse arrives this logic “1” value moves to the output
+of FFC ( Q C ) and so on until the arrival of the fifth clock pulse which sets
+all the outputs Q A to Q D back again to logic level “0” because the input to
+FFA has remained constant at logic level “0”.<br>
+						
+					<br>	• The effect of each clock pulse is to shift the data contents of
+each stage one place to the right, and this is shown in the
+following table until the complete data value of 0-0-0-1 <br>
+			
+					<br>	 Accepts data serially – one bit at a time – and also
+produces output serially.<br>
+						• This shift register is very similar to the SIPO except the data was read directly
+in a parallel form from the outputs Q A to Q D in SIPO, but the data is allowed to
+flow straight through the register and data out in the other end.<br>
+• Since there is only one output, the DATA leaves the shift register one bit at a
+time in a serial pattern, hence the name Serial-in to Serial-Out Shift Register
+or SISO.<br>
+						</div>	
+						
+						<a id="Parallel In/Serial Out Shift Registers"></a>
+					<div>
+						
+						<h3> Parallel In/Serial Out Shift Registers</h3>
+					<br>	 Bits are entered simultaneously, but output is serial.<br>
+ The data is loaded into the register in a parallel in which all the data
+bits enter their inputs simultaneously, to the parallel input pins P A to
+P D of the register.<br>
+ The data is read out sequentially in the normal shift-right mode from
+the register at Q representing the data present at P A to P D .<br>
+ It is important to note that in this type of shift register a clock pulse is
+not required to parallel load the register as it is already present, but
+four clock pulses are required to unload the data.<br>
+						
+						
+						 Simultaneous input and output of all data bits.
+ The data is presented in a parallel format to the parallel input pins P A
+to P D and then transferred together directly to their respective output
+pins Q A to Q D by the same clock pulse.<br>
+						</div>	
+						
+						<a id="Counters"></a>
+			<div>
+						<h3>Counters</h3>
+				
+			<br>	 Counters are circuits that cycle through a specified number
+of states.
+ Two types of counters:<br>
+ synchronous (parallel) counters<br>
+ asynchronous (ripple) counters<br>
+ Ripple counters allow some flip-flop outputs to be used as
+a source of clock for other flip-flops.<br>
+ Synchronous counters apply the same clock to all flip-
+flops.<br>
+						</div>			
+						
+						<a id="Asynchronous (Ripple) Counters"></a>
+				<div>
+						<h3> Asynchronous (Ripple) Counters</h3>
+					
+				<br>	 Asynchronous counters: the flip-flops do not change states
+at exactly the same time as they do not have a common
+clock pulse.<br>
+ Also known as ripple counters, as the input clock pulse
+“ripples” through the counter – cumulative delay is a
+drawback.<br>
+ n flip-flops  a MOD (modulus) 2 n counter. (Note: A
+MOD-x counter cycles through x states.)<br>
+ Output of the last flip-flop (MSB) divides the input clock
+frequency by the MOD number of the counter, hence a
+counter is also a frequency divider.<br>
+					
+					• Idea:<br>
+– to connect the output of one flip-flop to the C input of
+the next high-order flip-flop
+• We need “complementing” flip-flops<br>
+– We can use T flip-flops to obtain complementing flip-
+flops or<br>
+– JK flip-flops with its inputs are tied together<br>
+						</div>		
+						
+						<a id="2 bit Ripple binary up Counters"></a>
+					<div>
+						
+						<h3> 2 bit Ripple binary up Counters</h3>
+						Output of one flip-flop is connected to the clock input of the next
+more-significant flip-flop.<br>
+						</div>	
+					<a id="Binary Ripple Counter"></a>	
+					<div>
+						<h3>Binary Ripple Counter</h3>
+					<br>	 Operation
+ It is obvious that the lowest-order bit A 1 must be complemented with
+each count pulse.<br>
+ Every time A 1 goes from 1 to 0, it complements A 2 .<br>
+ Every time A 2 goes from 1 to 0, it complements A 3 .<br>
+ Every time A 3 goes from 1 to 0, it complements A 4 , and so on.<br>
+• The flip-flops change one at a time in rapid succession, and the signal
+propagates through the counter in a ripple fashion.<br>
+						
+						</div>	
+						<a id="BCD Ripple Counter (Decade Counter)"></a>
+						<div>
+						<h3>BCD Ripple Counter (Decade Counter)</h3>
+						<br>	• These counters have 10 states in their sequence.
+• A decade counter of states from 0000 to 1001 is called a BCD decade
+counter.<br>
+• Since the counter would have 16 states, it is forces to recycle before going
+through all of its possible state.<br>
+• The BCD decade counter is recycled to 0000 after the 1001 state.<br>
+• Such a counter must have at least four flip-flops to represent each decimal
+digit, since a decimal digit is represented by a binary code with at least
+four bits.<br>
+• The sequence of states in a decimal counter is dictated by the binary code
+used to represent a decimal digit.<br>
+						<br>	• Operation:<br>
+• When CP input goes from 1 to 0, the flip-flop is set if J = 1, is cleared
+if K = 1, is complemented if J = K = 1, and is left unchanged if J = K =
+0. The following are the conditions for each flip-flop state transition:
+1. Q 1 is complemented on the negative edge of every count pulse.
+2. Q 2 is complemented if Q 8 = 0 and Q 1 goes from 1 to 0. Q 2 is cleared if
+Q 8 = 1 and Q 1 goes from 1 to 0.
+3. Q 4 is complemented when Q 2 goes from 1 to 0.
+4. Q 8 is complemented when Q 4 Q 2 = 11 and Q 1 goes from 1 to 0. Q 8 is
+cleared if either Q 4 or Q2 is 0 and Q1 goes from 1 to 0.
+						</div>
+						
+						<a id="Synchronous (Parallel) Counters"></a>
+						<div>
+						<h3>Synchronous (Parallel) Counters </h3>
+					<br>	• Synchronous counters are distinguished from ripple counters in that
+clock pulses are applied to the CP inputs of all flip-flops.<br>
+• Synchronous counters are counters in which all the flip-flops are
+triggered simultaneously(in parallel) by the clock input pulses.<br>
+• All the FFs change state simultaneously in synchronization with the
+clock pulse.<br>
+• The decision whether a flip-flop is to be complemented or not is
+determined from the values of the J and K inputs at the time of the pulse.
+– If J = K = 0, the flip-flop remains unchanged. If J = K = 1, the flip-
+flop complements.<br>
+• Synchronous counters have the advantage of high speed but the
+disadvantage of having more circuitry than that of asynchronous counters<br>
+							
+						<br>	• Design procedure is so simple
+– no need for going through sequential
+logic design process<br>
+– A 0 is always complemented<br>
+– A 1 is complemented when A 0 = 1<br>
+– A 2 is complemented when A 0 = 1 and A 1 = 1<br>
+– so on<br>
+						</div>
+						<a id="Binary Up-Down Counter"></a>
+					<div>
+						<h3>Binary Up-Down Counter </h3>
+					<br>	• When counting downward<br>
+– the least significant bit is always complemented (with
+each clock pulse)<br>
+– A bit in any other position is complemented if all lower
+significant bits are equal to 0.<br>
+• Up down Counter operation<br>
+– When up= 1, the circuit counts up, since the T inputs
+receive their signals from the values of the previous
+normal outputs of the flip-flops.<br>
+– When down= 1 and up= 0, the circuit counts down<br>
+						
+						</div>	
+						<a id="Synchronous BCD Counter"></a>
+		<div>
+						<h3>Synchronous BCD Counter </h3>
+						
+						<br>• A BCD Counter is nothing but a mod 10 counter.
+• It requires 4 FFs<br>
+• A BCD counter counts in binary-coded decimal from 0000 to 1001 and
+back to 0000 where states 0000 through 1001 are stable.<br>
+• States 1010 through 1111 are invalid.<br>
+• After the tenth clock pulse, the counter resets.<br>
+• Because of the return to 0 after a count of 9, a BCD counter does not
+have a regular pattern as in a straight binary count.<br>
+• To derive the circuit of a BCD synchronous counter, it is necessary to
+go through a design procedure discussed earlier.<br>
+• The flip-flop input functions from the excitation table can be
+simplified by means of maps.<br>
+– The unused states for minterms 10 to 15 are taken as don't-care
+terms.<br>
+						</div>
+						<a id="Counter Design Example"></a>
+						<div>
+						<h3>Counter Design Example </h3>
+					<h4>	Please Download the pdf from footer of this site for step 1,2,3</h4>	
+					<br>	Step 4: Karnaugh Map<br>
+ Transfer the J and K states from the transition table to K-
+maps<br>
+ There is a K-map for each input of each flip-flop.<br>
+Step 5: Logic Expression for FF inputs<br>
+ Group the K-map cells to generate and derive the logic
+expression for each flip-flop input.<br>
+Step 6: Counter Implementation<br>
+ Implement the expressions with combinational logic,<br>
+and combine with the flip-flops to create the counter.<br>
+					<br>	• Designing a counter with the irregular binary
+sequence 1-> 2 -> 5 -> 7<br>
+						</div>
+						<a id="Timing Sequences"></a>
+						<div>
+						<h3>Timing Sequences </h3>
+						
+					<br>	• The sequences of operations in a digital system are
+specified by a control unit.<br>
+• The control unit that supervises the operations in a
+digital system would normally consist of timing
+signals that determine the time sequence in which
+the operations are executed.<br>
+• The timing sequences in the control unit can be
+easily generated by means of counters or shift
+registers<br>
+						</div>
+						<a id="Word-Time Generation"></a>
+						<div>
+						<h3>Word-Time Generation </h3>
+					<br>	• The control unit in a serial computer must generate a word-time signal
+that stays on for a number of pulses equal to the number of bits in the
+shift registers.<br>
+• The word-time signal can be generated by means of a counter that
+counts the required number of pulses.<br>
+• Initially, the 3-bit counter is cleared to 0. A start signal will set flip-
+flop Q. The output of this flip-flop supplies the word-time control and
+also enables the counter. After the count of eight pulses, the flip-flop is
+reset and Q goes to 0.
+						<br>	
+							<br>• The start signal is synchronized with the clock and stays on for one
+clock-pulse period.<br>
+• After Q is set to 1, the counter starts counting the clock pulses. When the
+counter reaches the count of 7 (binary 111), it sends a stop signal to the
+reset input of the flip-flop.<br>
+• The stop signal becomes a 1 after the negative-edge transition of pulse 7<br>
+• The next clock pulse switches the counter to the 000 state and also clears
+Q and the word-time signal stays at 0.<br>
+						
+						</div>
+						<a id="Timing Signals"></a>
+						<div>
+						<h3>Timing Signals </h3>
+						• The control unit in a digital system that operates in the parallel mode
+must generate timing signals that stay on for only one clock pulse
+period.
+• Timing signals that control the sequence of operations in a digital
+system can be generated with a shift register or a counter with a
+decoder.
+• A ring counter is a circular shift register with only one flip-flop being
+set at any particular time, all others are cleared.
+• The single bit is shifted from one flip-flop to the other to produce the
+sequence of timing signals.
+							
+							• To generate 2 n timing signals,
+– we need a shift register with 2 n flip-flops
+• or, we can construct the ring counter with a binary counter
+and a decoder
+						
+						</div>
+						<a id="Johnson Counter"></a>
+						<div>
+						<h3>Johnson Counter </h3>
+					<br>	• The Johnson counter, also known as the twisted-ring counter, is exactly the
+same as the ring counter except that the inverted output of the last flip-flop
+is connected to the input of the first flip-flop.<br>
+• The number of states can be doubled if the shift register is connected as a
+switch-tail ring counter<br>
+• A k-bit ring counter can generate k distinguishable states<br>
+• Total number of used states= 2*n<br>
+• Total number of unused states= 2 n – 2*n<br>
+						
+						<br>	• Count sequence and required decoding<br>
+							
+							<a id="Advantages of Johnson counter"></a>
+						<br>	Advantages of Johnson counter:<br>
+• The Johnson counter has same number of flip flop but it can count twice
+the number of states the ring counter can count.<br>
+• It can be implemented using D and JK flip flop.<br>
+• Johnson ring counter is used to count the data in a continuous loop.<br>
+• Johnson counter is a self-decoding circuit.<br>
+							<a id="Disadvantages of Johnson counter"></a>
+<br>Disadvantages of Johnson counter:<br>
+• Johnson counter doesn’t count in a binary sequence.<br>
+• In Johnson counter more number of states remain unutilized than the
+number of states being utilized.<br>
+• The number of flip flops needed is one half the number of timing signals.<br>
+• It can be constructed for any number of timing sequence.<br>
+						</div>
+						<a id="Memory unit"></a>
+						<div>
+						<h3>Memory unit </h3>
+						<br>• A memory unit is a collection of storage cells together with
+associated circuits needed to transfer information in and
+out of the device.<br>
+• Memory cells can be accessed for information transfer to
+or from any desired random location and hence the name
+random access memory, abbreviated RAM.<br>
+• A memory unit stores binary information in groups of bits
+called words.<br>
+• A word in memory is an entity of bits that move in and out
+of storage as a unit.<br>
+• A memory word is a group of 1's and 0's and may
+represent a number, an instruction, one or more
+alphanumeric characters, or any other binary-coded
+information.<br>
+						<a id="Integrated Circuit memory (Binary Cell- BC)"></a>	
+							
+						</div>	
+						<div>
+						<h3>Integrated Circuit memory (Binary Cell- BC) </h3>
+					<br>	The internal construction of a random-access memory of m words with
+n bits per word consists of m x n binary storage cells and associated
+decoding circuits for selecting individual words. The binary storage
+cell is the basic building block of a memory unit
+						<br>
+						</div>	
+						<a id="dowloaddl4"></a>
+						<button type="submit"><a href="https://doc-04-6k-docs.googleusercontent.com/docs/securesc/2frrppipru5uoajki3r077dap3aqcl7c/n9aaf9bmg1vertase17njc76c3aq6n40/1582014600000/07642160100281731799/07642160100281731799/0BxMsGmAprS6UYzBDZ1J2dnRZN1lBQ21rSUI4TFVZcHloZmdj?e=download&authuser=0">Download Now !!</a></button>
+						
+						
+						</p>
+					
+						
+						
+					
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-5 col-sm-9 sidebar">
+					
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Unit( Click the topic !! )</h4>
+						<ul>
+							<li><a href="digitallogic1.html">Binary Codes</a></li>
+							<li><a href="digitallogic2.html">Integrated Circuits </a></li>
+							<li><a href="digitallogic3.html">Synchronous and Asynchronous</a></li>
+							<li><a href="digitallogic4.html">Registers and Counters</a></li>
+							
+						</ul>
+					</div>
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Titles ( Click the title !!)</h4>
+						<ul>
+							
+							<li><a href="#Introduction"><h5>Introduction</h5></a>  </li>
+							<li> <a href="#Registers"><h5>Registers  </h5></a> </li>
+							<li> <a href="#Counters"><h5>Counters  </h5></a> </li>
+							<li> <a href="#Introduction to Registers"><h5> Introduction to Registers </h5></a> </li>
+							<li> <a href="#Registers With Parallel Load"><h5>Registers With Parallel Load  </h5></a> </li>
+							<li> <a href="#Shift Registers"><h5>Shift Registers  </h5></a> </li>
+							<li> <a href="#Serial-in to Parallel-out (SIPO) Shift Register"><h5> Serial-in to Parallel-out (SIPO) Shift Register </h5></a> </li>
+							<li> <a href="#Parallel In/Serial Out Shift Registers"><h5>  </h5></a> </li>
+							<li> <a href="#Asynchronous (Ripple) Counters"><h5> Asynchronous (Ripple) Counters </h5></a> </li>
+							<li> <a href="#2 bit Ripple binary up Counters"><h5> 2 bit Ripple binary up Counters </h5></a> </li>
+							<li> <a href="#Binary Ripple Counter"><h5> Binary Ripple Counter </h5></a> </li>
+							<li> <a href="#BCD Ripple Counter (Decade Counter)"><h5> BCD Ripple Counter (Decade Counter) </h5></a> </li>
+							<li> <a href="#Synchronous (Parallel) Counters"><h5>Synchronous (Parallel) Counters  </h5></a> </li>
+							<li> <a href="#Binary Up-Down Counter"><h5>Binary Up-Down Counter  </h5></a> </li>
+							<li> <a href="#Synchronous BCD Counter"><h5>Synchronous BCD Counter  </h5></a> </li>
+							<li> <a href="#Counter Design Example"><h5> Counter Design Example </h5></a> </li>
+							<li> <a href="#Timing Sequences"><h5>Timing Sequences  </h5></a> </li>
+							<li> <a href="#Word-Time Generation"><h5> Word-Time Generation </h5></a> </li>
+							<li> <a href="#Timing Signals"><h5>Timing Signals  </h5></a> </li>
+							<li> <a href="#Johnson Counter"><h5> Johnson Counter </h5></a> </li>
+							<li> <a href="#Advantages of Johnson counter"><h5>Advantages of Johnson counter  </h5></a> </li>
+							<li> <a href="#Disadvantages of Johnson counter"><h5>Disadvantages of Johnson counter  </h5></a> </li>
+							<li> <a href="#Memory unit"><h5>Memory unit  </h5></a> </li>
+							<li> <a href="#Integrated Circuit memory (Binary Cell- BC)"><h5>Integrated Circuit memory (Binary Cell- BC)  </h5></a> </li>
+							
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer-section spad pb-0">
+		<div class="footer-top">
+			<div class="footer-warp">
+
+				<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+			</div>
+		</div>
+	</footer> 
+	<!-- footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>IIT all notes</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="WebUni Education Template">
+	<meta name="keywords" content="Memory Representation,Binary, Octal, and Hexadecimal,Octal,Hexadecimal,Numbers,Integers,Memory and its classification,Types of computer memory,Primary Memory,Secondary Memory,Types of Primary memory,RAM Computer Memory,Types of RAM,DRAM,SRAM,Cache Memory,ROM Computer Memory,Types of ROM,ROM(or Masked ROM),PROM (Programmable Read-Only Memory),EPROM (Erasable Programmable Read-Only Memory),EEPROM, (Electrically Erasable Programmable Read-Only Memory),Flash ROM,Power On Self Test(POST),BIOS Setup program,Bootstrap loader,Types of Secondary memory,Network Attached Storage, (NAS),Input devices, Output devices, Interfaces,Input devices,Output devices,Input/output devices,Access Types Storage Devices,
+Sequential Access,Direct Access,Magnetic Disk,Optical Disk,Blu-ray Disk,How the CPU Uses Memory,Steps">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+						
+							
+						
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/3.jpg">
+		<div class="container">
+			<div class="site-breadcrumb">
+				
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	
+	<!-- search section end -->
+
+
+	<!-- Page  -->
+	<section class="blog-page spad pb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9">
+					<!-- blog post -->
+					<div class="blog-post">
+						<img src="img/categories/1.jpg" alt="">
+						<h3>IIT</h3>
+						<div class="blog-metas">
+							<div class="blog-meta author">
+								<div class="post-author set-bg" data-setbg="img/authors/1.jpg"></div>
+								<a href="#">DNY Sir</a>
+							</div>
+							<div class="blog-meta">
+								<a href="#">Development</a>
+							</div>
+						</div>
+						
+						
+						<p>
+						
+						<a id="Memory Representation"></a>
+						<div>
+						<h3>Memory Representation  </h3>
+						
+We store data in computer so it is important to know how
+different types of data (text, integer etc.) can represent in
+memory.<br>
+Bits, bytes, and words:<br>
+The most fundamental unit of computer memory is the bit and
+it can only take one of two values: it is either 0 or 1.
+A collection of 8 bits is called a byte and a collection of 4
+bytes, or 32 bits, is called a word.<br>
+
+The number of bytes and words used for an individual data
+value will vary depending on the storage format (OS,
+computer hardware) but in many cases, a single letter or
+character of text takes up one byte and an integer number
+takes up one word. A real or decimal number takes up one
+or two words depending on how it is stored.<br>
+For example, the text “hello” would take up 5 bytes of
+storage, one per character. The text “12345” would also
+require 5 bytes. The integer 12,345 would take up 4 bytes (1
+word), as would the integers 1 and 12,345,678. The real
+number 123.45 would take up 4 or 8 bytes, as would the
+values 0.00012345 and 12345000.0.<br>
+						</div>
+						<a id="Binary, Octal, and Hexadecimal"></a>
+						<div>
+						<h3> Binary, Octal, and Hexadecimal </h3>
+						A single byte of memory that contains the letter `A' (ASCII
+code 65; binary 1000001).<br>
+01000001<br>
+							
+							<a id="Octal"></a>
+							<h3>Octal</h3>
+Octal: A more convenient notation is octal, where each digit
+represents a value from 0 to 7. Each octal digit is the
+equivalent of 3 binary digits, so a byte of memory can be
+represented by 3 octal digits.<br>
+Example: the binary code of character `A' splits into triplets of
+binary digits (from the right) like this: 01 000 001. So the octal
+digits are 101, commonly written 0101 to emphasize the fact
+that these are octal digits.<br>
+
+<br>
+			<a id="Hexadecimal"></a>
+							<h3>Hexadecimal</h3>
+Hexadecimal: An even more efficient way to represent
+memory is hexadecimal form. Each digit represents a value
+between 0 and 16, with values greater than 9 replaced with
+the characters A to F.<br>
+A single hexadecimal digit corresponds to 4 bits, so each
+byte of memory requires only 2 hexadecimal digits.
+The binary form for the character `A' splits into two
+quadruplets: 0100 0001. The hexadecimal digits are 41<br>
+<a id="Numbers"></a>
+
+							<h3>Numbers</h3>Numbers: If we use two bits together to store a number,
+each bit has two possible states, so there are four possible
+combined states and each state to represent a different
+number.<br>
+▪ For example, the four possible states for 2 bits are 00, 01,
+10, 11 and could store four numbers using two bits: 0, 1,
+2, and 3. This representation is called binary notation.<br>
+▪ In general, if we use k bits, each bit has two possible
+states, and the bits combined can represent 2k possible
+states, so with k bits, we could represent the numbers
+0,1,2 up to 2 k - 1.<br>
+<a id="Integers"></a>
+							<h3>Integers</h3>
+Integers: Integers are commonly stored using a word of
+memory, which is 4 bytes or 32 bits, so integers from 0 up to
+4,294,967,295 (232 - 1) can be stored. Below are the
+integers 1 to 5 stored as four-byte values (each row
+represents one integer).<br>
+0 : 00000001 00000000 00000000 00000000 | 1<br>
+4 : 00000010 00000000 00000000 00000000 | 2<br>
+8 : 00000011 00000000 00000000 00000000 | 3<br>
+12 : 00000100 00000000 00000000 00000000 | 4<br>
+16 : 00000101 00000000 00000000 00000000 | 5<br>
+						</div>
+						<a id="Memory and its classification"></a>
+						<div>
+						<h3> Memory and its classification </h3>
+						⚫ Computer memory in generic term is an electronic circuit
+to store a data in computer.<br>
+⚫ It uses a different types of data storage technology
+including RAM, ROM, flash memory and secondary
+storage.<br>
+⚫ Another way, computer memories are non-volatile and
+Volatile type<br>
+⚫ Non-Volatile means they can store data on a long term
+basis even when there is no power and volatile which are
+often faster but lose all the data stored on them as soon
+as the power is switched off.<br>
+							⚫ A computer system is built using a combination of these
+types of computer memory, and the exact configuration
+can be optimized to produce the maximum data
+processing speed or the minimum cost, or some
+compromise between the two.<br>
+						</div>
+						<a id="Types of computer memory"></a>
+						<div>
+						<h3>Types of computer memory  </h3>
+						<br>
+							<a id="Primary Memory"></a>
+							<h3>Primary Memory</h3>
+							
+⚫ Primary memory includes ROM and RAM, and is located close to
+the CPU on the computer motherboard, enabling the CPU to read
+data from primary memory very quickly indeed. It is used to store
+data that the CPU needs imminently so that it does not have to wait
+for it to be delivered.<br>
+<br>
+							<a id="Secondary Memory"></a>
+							<h3>Secondary Memory</h3>
+⚫ Secondary memory by contrast, is usually physically located within
+a separate storage device, such as a hard disk drive or solid state
+drive (SSD), which is connected to the computer system either
+directly or over a network. The cost per gigabyte of secondary
+memory is much lower, but the read and write speeds are
+significantly slower.<br>
+
+<br>
+							<a id="Types of Primary memory"></a>
+							<h3>Types of Primary memory</h3>
+▪ With computer evolution, many computer memory types has been
+deployed, each with its own strengths and weaknesses.<br>
+There are two key types of primary memory:<br>
+▪ RAM = Random Access Memory<br>
+▪ ROM = Read Only Memory<br>
+						</div>
+						<a id="RAM Computer Memory"></a>
+						<div>
+						<h3>RAM Computer Memory  </h3>
+						⚫ RAM stems from the fact that data stored in Random Access Memory can be
+accessed in any random order.<br>
+⚫ RAM memory is very fast both in write and read.<br>
+⚫ It is volatile (so all data stored in RAM memory is lost when it loses power).<br>
+⚫ It is very expensive compared to all types of secondary memory in terms of
+cost per gigabyte.<br>
+⚫ It is because of the relative high cost of RAM compared to secondary memory
+types that most computer systems use both primary and secondary memory.<br>
+⚫ Data that is required for imminent processing is moved to RAM where it can
+be accessed and modified very quickly, so that the CPU is not kept waiting.<br>
+⚫ When the data is no longer required it is shunted out to slower but cheaper
+secondary memory, and the RAM space that has been freed up is filled with
+the next chunk of data that is about to be used.<br>
+
+<a id="Types of RAM"></a>
+							<h3>Types of RAM</h3>
+							<a id="DRAM (Dynamic RAM)"></a>	
+							<h3>DRAM (Dynamic RAM)</h3>
+	
+▪ It is the most common type of RAM used in computers.<br>
+▪ The oldest type is known as Single Data Rate (SDR) DRAM<br>
+▪ Newer computers use faster Dual Data Rate (DDR) DRAM.<br>
+▪ DDR comes in several versions including DDR2 , DDR3, and DDR4,
+which offer better performance and are more energy efficient than
+DDR.<br>
+▪ It is not possible to mix DDR2 with DDR3 DRAM in a computer
+system. Different versions are incompatible.<br>
+						<a id="SRAM"></a>
+							<h3>SRAM</h3>
+							<br>▪ SRAM is Faster than DRAM<br>
+▪ More expensive and bulker, having six transistors in each
+cell.<br>
+▪ For those reasons SRAM is generally only used as a data
+cache within a CPU itself or as RAM in very high-end
+server systems.<br>
+▪ A small SRAM cache of the most imminently-needed data
+can result in significant speed improvements in a system<br>
+						</div>
+						<a id="Cache Memory"></a>
+						<div>
+							
+						<h3> Cache Memory </h3>
+					<br>	⚫ Cache Memory is a special very high-speed memory used to speed up and
+synchronizing with high-speed CPU.<br>
+⚫ Cache memory is costlier than main memory or disk memory but economical
+than CPU registers.<br>
+⚫ Cache memory is an extremely fast memory type that acts as a buffer
+between RAM and the CPU. It holds frequently requested data and
+instructions so that they are immediately available to the CPU when needed.<br>
+⚫ Cache memory is used to reduce the average time to access data from the
+Main memory. The cache is a smaller and faster memory which stores copies
+of the data from frequently used main memory locations.<br>
+						</div>
+						<a id="ROM Computer Memory"></a>
+						<div>
+						<h3>ROM Computer Memory  </h3>
+						▪ ROM (read-only memory) means data can be read from this type of memory, data
+cannot normally be written to it.<br>
+▪ It is a very fast type of computer memory which is usually installed close to the
+CPU on the motherboard.<br>
+▪ ROM is a type of non-volatile memory, which means that the data stored in ROM
+persists in the memory even when it receives no power. In that sense it is similar
+to secondary memory, which is used for long term storage.<br>
+▪ When a computer is turned on, the CPU can begin reading information stored in
+ROM without the need for drivers or other complex software to help it
+communicate.<br>
+▪ The ROM usually contains "bootstrap code" which is the basic set of instructions a
+computer needs to carry out to become aware of the operating system stored in
+secondary memory, and to load parts of the operating system into primary
+memory so that it can start up and become ready to use.<br>
+▪ ROM is also used in simpler electronic devices to store firmware which runs as
+soon as the device is switched on.<br>
+<a id="Types of ROM"></a>
+							<h3>Types of ROM</h3>
+<br>
+		<a id="ROM(or Masked ROM)"></a>
+		<h3>ROM(or Masked ROM)</h3>					
+▪ ROM(or Masked ROM) Preprogrammed set of data or instructions
+are stored in ROM. The contents of such ROMs have to be
+specified before chip production. ROM is available in several
+different types, including PROM, EPROM, EEPROM and Flash
+ROM.<br>
+		<a id="PROM (Programmable Read-Only Memory)"></a>
+							<h3>PROM (Programmable Read-Only Memory)</h3>
+▪ PROM (Programmable Read-Only Memory), and it is different from
+true ROM. ROM is programmed during the manufacturing process,
+a PROM is manufactured in an empty state and then programmed
+later using a PROM programmer or burner.<br>
+							<a id="EPROM (Erasable Programmable Read-Only Memory)"></a>
+							<h3>EPROM (Erasable Programmable Read-Only Memory)</h3>
+▪ EPROM (Erasable Programmable Read-Only Memory) and data
+stored in an EPROM can be erased and the EPROM
+reprogrammed. Erasing an EPROM involves removing it from the
+computer and exposing it to ultraviolet light before re-burning it.
+Memory and its classification<br>
+							<a id="EEPROM (Electrically Erasable Programmable Read-Only Memory)"></a>
+							<h3>EEPROM (Electrically Erasable Programmable Read-Only Memory)</h3>
+▪ EEPROM (Electrically Erasable Programmable Read-Only
+Memory). Distinction between EPROM and EEPROM is that the
+latter can be erased and written to by the computer system it is
+installed in. EEPROM is not strictly read-only. However in many
+cases the write process is slow, so it is normally only done to update
+program code such as firmware or BIOS code on an occasional
+basis.<br>
+	<a id="Flash ROM"></a>
+							<h3>Flash ROM</h3>
+▪ Flash ROM: Also called Flash BIOS or flash memory. This memory
+should be constantly powered and act as non-volatile memory in
+computer. Function of Flash ROM are<br>
+							<a id="POST"></a>
+							<h3>Power On Self Test(POST)</h3>
+▪ Power On Self Test(POST) – Checks the major hardware components<br>
+						<a id="BIOS Setup program"></a>	
+							<h3>BIOS Setup program</h3>
+▪ BIOS Setup program – built in utility in BIOS which control how the computer<br>
+works i.e. system settings, find bootable devices, interrupt handlers and
+device drivers<br>
+					<a id="Bootstrap loader"></a>
+							<h3>Bootstrap loader</h3>
+▪ Bootstrap loader: is a program to start the computer software for operation
+when the power is ON.<br>
+						</div>
+						<a id="Types of Secondary memory"></a>
+						<div>
+						<h3>Types of Secondary memory  </h3>
+						Secondary memory comprises many different storage media which can
+be directly attached to a computer system. These include:<br>
+▪ Hard disk drives<br>
+▪ Solid State Drives (SSDs)<br>
+▪ Optical (CD or DVD) drives<br>
+▪ Tape drives<br>
+Secondary memory also includes:<br>
+▪ Storage arrays including 3D NAND flash arrays connected over a
+Storage Area Network (SAN)<br>
+▪ Storage devices which may be connected over a conventional
+network (known as network attached storage, or NAS)<br>
+▪ Cloud storage can also be called secondary memory.<br>
+						</div>
+						<a id="Network Attached Storage (NAS)"></a>
+						<div>
+						<h3> Network Attached Storage (NAS) </h3>
+						NAS systems are
+networked appliances which contain one or more
+storage drives, often arranged into logical, redundant
+storage containers or RAID. Network-attached storage
+removes the responsibility of file serving from other
+servers on the network.<br>
+						</div>
+						<a id="Input devices, Output devices, Interfaces"></a>
+						<div>
+						<h3>Input devices, Output devices, Interfaces </h3>
+						▪ An input device sends information to a computer system
+for processing, and an output device reproduces or
+displays the results of that processing.<br>
+▪ Input devices only allow for input of data to a computer
+and output devices only receive the output of data from
+another device.<br>
+▪ Most devices are only input devices or output devices, as
+they can only accept data<br> input from a user or output data
+generated by a computer.
+▪ However, some devices can accept input and display
+output, and they are referred to as I/O devices
+(input/output devices).<br>
+<a id="Input devices"></a>
+							<h3>Input devices</h3>
+Input devices:<br>
+An input device can send data to another device, but it
+cannot receive data from another device. Examples of input
+devices include the following.<br>
+▪ Keyboard and Mouse - Accepts input from a user and
+sends that data (input) to the computer. They cannot
+accept or reproduce information (output) from the
+computer.<br>
+▪ Microphone - Receives sound generated by an input
+source, and sends that sound to a computer.<br>
+▪ Webcam - Receives images generated by whatever it is
+pointed at (input) and sends those images to a computer.
+<br>
+Types of input devices:<br>
+▪ Audio conversion device<br>
+▪ Barcode reader<br>
+▪ Biometrics (e.g., fingerprint scanner).<br>
+▪ Business card reader<br>
+▪ Digital camera and digital camcorder.<br>
+▪ EEG (electroencephalography)<br>
+▪ Finger (with touch screen or Windows Touch).<br>
+▪ Gamepad, joystick, paddle, steering wheel, and
+Microsoft Kinect.<br>
+▪ Gesture recognition<br>
+▪ Graphics tablet<br><br>
+▪ Keyboard<br>
+▪ Light gun<br>
+▪ Light pen<br>
+▪ Magnetic ink (like the ink found on checks).<br>
+▪ Magnetic stripe reader<br>
+▪ Medical imaging devices (e.g., X-ray, CAT scan, and
+ultrasound images).<br>
+▪ Microphone (using voice speech recognition or
+biometric verification).<br>
+▪ MIDI keyboard<br>
+▪ MICR<br>
+▪ Mouse, touchpad, or other pointing devices.<br>
+▪ OMR (optical mark reader)<br>
+▪ Paddle<br>
+▪ Pen or stylus<br>
+▪ Punch card reader<br>
+▪ Remote<br>
+▪ Scanner<br>
+▪ Sensors (e.g., heat and orientation sensors).<br>
+▪ Sonar imaging devices<br>
+▪ Stylus (with touch screen).<br>
+▪ Touch screen<br>
+▪ Voice (using voice speech recognition or biometric
+verification).<br>
+▪ Video capture device<br>
+▪ VR helmet and gloves<br>
+▪ Webcam<br>
+▪ Yoke<br>
+
+<a id="Output devices"></a>
+							<h3>Output devices</h3>
+Output devices:<br>
+An output device can receive data from another device and
+generate output with that data, but it cannot send data to
+another device. Examples of output devices include the
+following.<br>
+▪ Monitor - Receives data from a computer (output) and displays that
+information as text and images for users to view. It cannot accept data
+from a user and send that data to another device.<br>
+▪ Projector - Receives data from a computer (output) and displays, or
+projects, that information as text and images onto a surface, like a wall or
+a screen. It cannot accept data from a user and send that data to another
+device.<br>
+▪ Speakers - Receives sound data from a computer and plays the sounds
+for users to hear. It cannot accept sound generated by users and send
+that sound to another device.<br>
+
+Types of output devices<br>
+▪ 3D Printer<br>
+▪ Braille embosser<br>
+▪ Braille reader<br>
+▪ COM (Computer Output
+Microfilm)<br>
+▪ Flat-panel<br>
+▪ GPS<br>
+▪ Headphones<br>
+▪ Monitor<br>
+▪ Plotter<br>
+▪ Printer (dot matrix printer,
+inkjet printer, and laser
+printer)<br>
+▪ Projector<br>
+▪ Sound card<br>
+▪ Speakers<br>
+▪ SGD (Speech-generating
+device)<br>
+▪ TV<br>
+▪ Video card<br>
+<a id="Input/output devices"></a>
+							<h3>Input/output devices</h3>
+Input/output devices:<br>
+An input/output device can receive data from users, or
+another device (input), and send data to another device
+(output). Examples of input/output devices include the
+following.<br>
+▪ CD-RW drive and DVD-RW drive - Receives data from a
+computer (input), to copy onto a writable CD or DVD. Also,
+the drive sends data contained on a CD or DVD (output)
+to a computer.<br>
+▪ USB flash drive - Receives, or saves, data from a
+computer (input). Also, the drive sends data to a computer
+or another device (output).<br>
+Note: Drives such as a CD-ROM, DVD, floppy diskette drive, and USB flash drive are also considered storage devices.
+Input devices, Output devices, Interfaces
+<br>
+▪ Input Output Interface provides a method for transferring
+information between internal storage and external I/O
+devices.<br>
+▪ Peripherals connected to a computer need special
+communication links for interfacing them with the central
+processing unit.<br>
+▪ The purpose of communication link is to resolve the
+differences that exist between the central computer and
+each peripheral.<br>
+
+Input - Output Interface:<br>
+CPU and device controllers all use a common bus for communication
+<br>
+The Major Differences are:-<br>
+1. Peripherals are electromechnical and electromagnetic devices and CPU and
+memory are electronic devices. Therefore, a conversion of signal values may be
+needed.<br>
+2. The data transfer rate of peripherals is usually slower than the transfer rate of CPU
+and consequently, a synchronization mechanism may be needed.<br>
+3. Data codes and formats in the peripherals differ from the word format in the CPU
+and memory.<br>
+4. The operating modes of peripherals are different from each other and must be
+controlled so as not to disturb the operation of other peripherals connected to the
+CPU.<br>
+To Resolve these differences, computer systems include special hardware
+components between the CPU and Peripherals to supervises and synchronizes all
+input and out transfers<br>
+▪ These components are called Interface Units because they interface between the
+processor bus and the peripheral devices.<br>
+
+1. Access Types Storage Devices<br>
+1. Sequential Access<br>
+2. Direct Access<br>
+2. Input Devices<br>
+1. Human Data Entry Devices<br>
+2. Source data Entry Devices<br>
+3. Optical Input Devices<br>
+3. Output Devices<br>
+1. Hard Copy Devices<br>
+2. Soft Copy Devices<br>
+
+<a id="Access Types Storage Devices"></a>
+							<h3>1. Access Types Storage Devices</h3>
+
+				<a id="Sequential Access"></a>
+							<h3>1.Sequential Access</h3>
+<br> Sequential access means the data is
+written or read in sequence one after another and can’t go
+directly to the desired location without going through all
+preceding locations.<br>
+Example: Magnetic Tape<br>
+A magnetic tape is a storage medium that
+allows for data archiving, collection, and
+backup. At first, the tapes were wound in
+wheel-like reels, but then cassettes and
+cartridges came along, which offered more
+protection for the tape inside.<br>
+
+<a id="Direct Access"></a>
+							<h3>2. Direct Access</h3>
+<br> Direct access devices are the ones in which
+any piece of data can be retrieved in a non-sequential manner
+by locating it using the data’s address. The device is called
+random access because any data from any location can be
+read or written directly.<br>
+Example: Magnetic Disk<br>
+Data keeps in magnetized materials.<br>
+Magnetic storage offers high storage
+capacity, reliability, and the capacity to
+directly accessing data. Data can be
+accessed randomly from magnetic disk.<br>
+<a id="Magnetic Disk"></a>
+							<h3>Magnetic Disk</h3>
+<br>
+• Data can be accessed randomly from
+magnetic disk.<br>
+• Magnetic disk holds more data in small
+place and attains faster data access.<br>
+• It is a thin, circular metal plate / plotter
+coated with magnetic material such as iron
+oxide or ferrous oxide on the both side
+which can be magnetized.<br>
+• Data transfer rate higher than Tape system.<br>
+• Very large amount of data can be stored in
+a small space.<br>
+• Erased and reused many times.<br>
+• Cost is more expensive than tape system
+<br>
+	<a id="Optical Disk"></a>
+							<h3>Optical Disk</h3>
+<br>
+• Uses optical storage techniques and
+technology to read and write data.<br>
+• Uses laser beams (transmitted from a laser
+head mounted on an optical disk drive) to
+read and write data.<br>
+• Primarily used as a portable and secondary
+storage device and has a relatively longer
+lifespan.<br>
+• Compact disks (CD-R, CD-R/W), digital
+versatile/video disks (DVD-R, DVD-R/W)
+and Blu-ray disks are currently the most
+commonly used forms of optical disks.<br>
+<a id="Blu-ray Disk"></a>
+							<h3>Blu-ray Disk</h3>
+<br>
+Optical disks are generally used to:<br>
+• Distribute software to customers<br>
+• Store large amounts of data such as music, images and videos<br>
+• Transfer data to different computers or devices<br>
+• Back up data from a local machine<br>
+▪ Use Blu-ray technology (blue-violet laser) is used to
+read Blu-ray disks.<br>
+▪ Compared to a DVD’s red laser, a blue laser permits
+more information to be stored at a greater density.<br>
+▪ DVD can store 15 GB per layer, a Blu-ray disk can
+store 25 GB per layer, and dual-layer disks can hold
+up to 50 GB.<br>
+
+
+	</div>
+						<a id="How the CPU Uses Memory"></a>
+						<div>
+						<h3>How the CPU Uses Memory  </h3>
+						⚫ Computer memory refers to the area where data and programs are
+stored. Memory is not part of the CPU, but the CPU must interact
+closely with it.<br>
+⚫ There are two types of computer memory: primary, or main, and
+secondary. The CPU relies heavily on main memory for storing
+program instructions and the data on which the instructions operate
+on. Main memory is temporary in nature and only holds instructions
+and data for a program while the program is executing. Secondary
+memory is the more permanent storage provided by hard drives and
+flash drives.<br>
+⚫ A component of the CPU known as the control unit is responsible for
+moving instructions and data from secondary storage into main
+memory prior to instruction execution. The control unit also moves
+the results of an instruction to secondary storage.
+How the computer uses the memory
+How the CPU Uses Memory:<br>
+Before an instruction can be executed,
+program instructions and data must be
+placed into memory from an input device
+or a secondary storage device<br>
+Once the necessary data and instruction
+are in memory, the central processing unit
+performs the following four steps for each
+instruction:<br>
+						</div>
+						<a id="Steps"></a>
+						<div>
+						<h3> Steps </h3>
+					<br>	1. The control unit fetches (gets) the instruction
+from memory.<br>
+2. The control unit decodes the instruction (decides
+what it means) and directs that the necessary
+data be moved from memory to the
+arithmetic/logic unit. These first two steps
+together are called instruction time, or I-time.<br>
+3. The arithmetic/logic unit executes the arithmetic
+or logical instruction. That is, the ALU is given
+control and performs the actual operation on the
+data.<br>
+4. The ALU unit stores the result of this operation
+in memory or in a register. Steps 3 and 4
+together are called execution time, or E-time.
+						</div>
+						
+						
+						
+						
+						
+						</p>
+					
+						
+						
+					
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-5 col-sm-9 sidebar">
+					
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Unit</h4>
+						<ul>
+							<li><a href="iit1.html">Introduction to Computer</a></li>
+							<li><a href="iit2.html"> The Computer system Hardware</a></li>
+							<li><a href="iit3.html">Computer Memory</a></li>
+							<li><a href="iit4.html">Input and Output devices</a></li>
+							<li><a href="iit5.html">Data Presentation</a></li>
+						</ul>
+					</div>
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Titles</h4>
+						<ul>
+							
+							<li><a href="#Memory Representation"><h5>Memory Representation </h5></a> </li>
+							<li><a href="#Binary, Octal, and Hexadecimal"><h5> Binary, Octal, and Hexadecimal</h5></a> </li>
+							<li><a href="#Octal"><h5>Octal </h5></a> </li>
+							<li><a href="#HEX"><h5>Hexadecimal </h5></a> </li>
+							<li><a href="#Numbers"><h5>Numbers </h5></a> </li>
+							<li><a href="#Integers"><h5>Integers </h5></a> </li>
+							<li><a href="#Memory and its classification"><h5>Memory and its classification </h5></a> </li>
+							<li><a href="#Types of computer memory"><h5>Types of computer memory </h5></a> </li>
+							<li><a href="#Primary Memory"><h5>Primary Memory </h5></a> </li>
+							<li><a href="#Secondary Memory"><h5> Secondary Memory</h5></a> </li>
+							<li><a href="#Types of Primary memory"><h5> Types of Primary memory</h5></a> </li>
+							<li><a href="#RAM Computer Memory"><h5>RAM Computer Memory </h5></a> </li>
+							<li><a href="#Types of RAM"><h5>Types of RAM </h5></a> </li>
+							<li><a href="#DRAM"><h5>DRAM </h5></a> </li>
+							<li><a href="#SRAM"><h5>SRAM </h5></a> </li>
+							<li><a href="#Cache Memory"><h5>Cache Memory </h5></a> </li>
+							<li><a href="#ROM Computer Memory"><h5>ROM Computer Memory </h5></a> </li>
+							<li><a href="#Types of ROM"><h5>Types of ROM </h5></a> </li>
+							<li><a href="#ROM(or Masked ROM)"><h5>ROM(or Masked ROM) </h5></a> </li>
+							<li><a href="#PROM (Programmable Read-Only Memory)"><h5> PROM (Programmable Read-Only Memory)</h5></a> </li>
+							<li><a href="#EPROM (Erasable Programmable Read-Only Memory)"><h5>EPROM (Erasable Programmable Read-Only Memory) </h5></a> </li>
+							<li><a href="#EEPROM (Electrically Erasable Programmable Read-Only Memory)"><h5>EEPROM (Electrically Erasable Programmable Read-Only Memory) </h5></a> </li>
+							<li><a href="#Flash ROM"><h5>Flash ROM </h5></a> </li>
+							<li><a href="#Power On Self Test(POST)"><h5>Power On Self Test(POST) </h5></a> </li>
+							<li><a href="#BIOS Setup program"><h5>BIOS Setup program </h5></a> </li>
+							<li><a href="#Bootstrap loader"><h5> Bootstrap loader</h5></a> </li>
+							<li><a href="#ypes of Secondary memory"><h5> ypes of Secondary memory</h5></a> </li>
+							<li><a href="#Network Attached Storage (NAS)"><h5>Network Attached Storage (NAS) </h5></a> </li>
+							<li><a href="#Input devices, Output devices, Interfaces"><h5>Input devices, Output devices, Interfaces </h5></a> </li>
+							<li><a href="#Input devices"><h5>Input devices </h5></a> </li>
+							<li><a href="#Output devices"><h5>Output devices </h5></a> </li>
+							<li><a href="#Input/output devices"><h5>Input/output devices </h5></a> </li>
+							<li><a href="#Access Types Storage Devices"><h5>Access Types Storage Devices </h5></a> </li>
+							<li><a href="#Sequential Access"><h5>Sequential Access </h5></a> </li>
+							<li><a href="#Direct Access"><h5>Direct Access </h5></a> </li>
+							<li><a href="#Magnetic Disk"><h5> Magnetic Disk</h5></a> </li>
+							<li><a href="#Optical Disk"><h5> Optical Disk</h5></a> </li>
+							<li><a href="#Blu-ray Disk"><h5>Blu-ray Disk </h5></a> </li>
+							<li><a href="#How the CPU Uses Memory"><h5>How the CPU Uses Memory </h5></a> </li>
+							<li><a href="#Steps"><h5>Steps </h5></a> </li>
+							
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer-section spad pb-0">
+		<div class="footer-top">
+			<div class="footer-warp">
+
+				<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+			</div>
+		</div>
+	</footer> 
+	<!-- footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

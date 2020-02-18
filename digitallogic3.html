@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Digital Logic all notes</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="WebUni Education Template">
+	<meta name="keywords" content="Synchronous vs. Asynchronous,
+Flip Flop,
+Basic flip-flop circuit, (direct-coupled RS flip-flop or SR latch),
+Basic flip-flop circuit:, SR Latch with NAND Gates,
+SR Latch with Control Input,
+Clocked RS Flip-Flop:, NOR gate,
+Clocked RS Flip-Flop:, NAND gate,
+Clocked RS Flip-Flop,
+Clocked JK Flip-Flop,
+Clocked JK Flip-Flop: Race around condition,
+D Flip-Flop,
+T Flip-Flop,
+Master-Slave Flip-Flop,
+RS Master-Slave Flip-flop,
+JK Master-slave Flip-Flop,
+Triggering of Flip Flop,
+Edge-Triggered Flip-Flop,
+Direct Inputs,
+Analysis of Clocked Sequential Circuit,
+State Equations,
+State table,
+State Diagram,
+State Reduction and Assignment,
+State Reduction,
+State Reduction Example,
+State Assignment,
+Design Procedure of Sequential Circuit,
+Design Example,
+Difference between synchronous and asynchronous circuit,
+Latch and Flip Flops">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="courses.html">Courses</a></li>
+						
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/3.jpg">
+		<div class="container">
+			<div class="site-breadcrumb">
+				
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	
+	<!-- search section end -->
+
+
+	<!-- Page  -->
+	<section class="blog-page spad pb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9">
+					<!-- blog post -->
+					<div class="blog-post">
+						<img src="img/categories/3.jpg" alt="">
+						<h3>Digital Logic </h3>
+						<div class="blog-metas">
+							<div class="blog-meta author">
+								<div class="post-author set-bg" data-setbg="img/authors/1.jpg"></div>
+								<a href="#">SNM Sir</a>
+							</div>
+							<div class="blog-meta">
+								<a href="#">Electronics</a>
+							</div>
+						</div>
+						
+						
+					<p>
+						
+						<div class="row">
+			<h1>Synchronous and Asynchronous</h1>
+		</div>
+	<div>
+				<a href="#dowloaddl3">Looking for pfd ? Go to download click me !!</a>
+						</div>		
+<p>
+	<div class="courses_row">
+<p>
+<h3>Synchronous vs. Asynchronous</h3>
+<p>There are two types of sequential circuits: </p>
+<p>Synchronous sequential circuit:</p>
+<p>
+It is a system whose behavior can be defined from the
+knowledge of its signals at discrete instant of time.
+Circuit output changes only at some discrete instants of
+time.
+This type of circuits achieves synchronization by using
+a timing signal called the clock. 	
+</p>
+<p>
+Asynchronous sequential circuit:	
+</p>
+<p>It is a system whose behavior depends in the order in
+which its input signals change and can be affected at
+any instant of time.
+circuit output can change at any time (clock less).
+
+</p>
+	</div>		
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</p>	
+	<div class="courses_row">
+	<p>
+<h3>Flip Flop </h3>
+The memory elements used in clocked sequential circuits
+are called flip-flops.
+• These circuits are binary cells capable of storing one bit of
+information.
+• A flip-flop circuit has two outputs, one for the normal
+value and one for the complement value of the bit stored in
+it.
+• A flip-flop circuit can maintain a binary state indefinitely
+(as long as power is delivered to the circuit) until directed
+by an input signal to switch states.
+• The major differences among various types of flip-flops
+are in the number of inputs they possess and in the manner
+in which the inputs affect the binary state. 
+
+</p>
+	</div>	<div class="courses_row">
+<p>
+<h3>Basic flip-flop circuit (direct-coupled
+RS flip-flop or SR latch)</h3>
+<p>
+	The SR latch is a circuit with two cross-coupled NOR gates or two crosscoupled NAND gates.
+• Each flip-flop has two outputs, Q and Q', and two inputs, set and reset
+• The cross-coupled connection from the output of one gate to the input of the
+other gate constitutes a feedback path.
+• For this reason, the circuits are classified as asynchronous sequential circuits. 
+</p>
+<p>
+	A flip-flop has two useful states.
+• Set state: When Q = 1 and Q' = 0, (or 1-state),
+• Reset state: When Q = 0 and Q' = 1, (or 0-state)
+• Output of a NOR gate is 0 if any input is 1, and that the output is 1 only when
+all inputs are 0.
+• First, assume that the set input is 1 and the reset input is 0. Since gate-2 has
+an input of 1, its output Q' must be 0, which puts both inputs of gate-1 at 0, so
+that output Q is 1. When the set input is returned to 0, the outputs remain the
+same i.e. output Q' stay at 0, which leaves both inputs of gate-1 at 0, so that
+output Q is 1.
+• Similarly, 1 in the reset input changes output Q to 0 and Q' to 1. When the
+reset input returns to 0, the outputs do not change.
+• When a 1 is applied to both the set and the reset inputs, both Q and Q' outputs
+go to 0. This condition violates the fact that outputs Q and Q' are the
+complements of each other. 
+	
+</p>
+</p>
+</div>	<div class="courses_row">
+<p>
+<h3>Basic flip-flop circuit: SR Latch with
+NAND Gates</h3>
+The NAND basic flip-flop circuit operates with both inputs
+normally at 1 unless the state of the flip-flop has to be
+changed.
+• The application of a momentary 0 to the set input causes
+output Q to go to 1 and Q' to go to 0, thus putting the flipflop into the set state
+• After the set input returns to 1, a momentary 0 to the reset
+input causes a transition to the clear state.
+• When both inputs go to 0, both outputs go to 1- a condition
+avoided in normal flip-flop operation.
+
+</p>
+<p>
+	</div>	<div class="courses_row">
+<h3>SR Latch with Control Input</h3>
+The operation of the basic SR latch can be modified by
+providing an additional control input that determines when
+the state of the latch can be changed.
+• In Fig., it consists of the basic SR latch and two additional
+NAND gates. 
+
+</p>
+</div>	<div class="courses_row">
+<p>
+<h3>Clocked RS Flip-Flop: NOR gate</h3>
+It consists of a basic flip-flop circuit and two additional
+AND gates along with clock pulse (CP) input.
+• The pulse input acts as an enable signal for the other two
+inputs.
+
+</p>
+</div>	
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div class="courses_row">
+<p>
+<h3>Clocked RS Flip-Flop: NAND gate</h3>
+It consists of a basic flip-flop circuit and two additional
+NAND gates along with clock pulse (CP) input.
+• The pulse input acts as an enable signal for the other two
+inputs.
+
+</p>
+</div>	<div class="courses_row">
+<p>
+<h3>Clocked RS Flip-Flop</h3>
+<p>
+	When the pulse input goes to 1, information from the S or R input is
+allowed to reach the output.
+• Set state: S = 1, R = 0, and CP = 1.
+• Reset state: S = 0, R = 1, and CP = 1.
+• In either case, when CP returns to 0, the circuit remains in its previous
+state.
+• When CP = 1 and both the S and R inputs are equal to 0, the state of
+the circuit does not change. 
+</p>
+<p>
+	Characteristic equation
+</p>
+<p>
+	The characteristic equation of the flip-flop
+specifies the value of the next state as a function
+of the present state and the inputs. 
+</p>
+<p>
+	Graphic symbol
+</p>
+<p>
+	The graphic symbol of the RS
+flip-flop consists of a
+rectangular-shape block with
+inputs S, R, and C. The
+outputs are Q and Q', where
+Q' is the complement of Q
+(except in the indeterminate
+state). 
+
+</p>
+</p>
+</div>	<div class="courses_row">
+<p>
+<h3>Clocked JK Flip-Flop</h3>
+<p>
+	A JK flip-flop is a refinement of the RS flip-flop in that the
+indeterminate state of the RS type is defined in the JK type.
+• Inputs J and K behave like inputs S and R to set and clear
+the flip-flop, respectively.
+• The input marked J is for set and the input marked K is for
+reset.
+• When both inputs J and K are equal to 1, the flip-flop
+switches to its complement state, that is, if Q = 1, it
+switches to Q = 0, and vice versa.
+• A JK flip-flop constructed with two cross-coupled NOR
+gates and two AND gates
+</p>
+<p>
+	A JK flip-flop constructed with two cross-coupled NOR
+gates and two AND gates.
+• Output Q is ANDed with K and CP inputs so that the flipflop is cleared during a clock pulse only if Q was
+previously 1.
+• Similarly, output Q' is ANDed with J and CP inputs so that
+the flop-flop is set with a clock pulse only when Q' was
+previously 1.
+• Because of the feedback connection in the JK flipflop, a
+CP pulse that remains in the 1 state while both J and K are
+equal to 1 will cause the output to complement again and
+repeat complementing until the pulse goes back to 0. 
+
+</p>
+</p>
+</div>	<div class="courses_row">
+<p>
+<h3>Clocked JK Flip-Flop: Race around
+condition</h3>
+If the inputs of JK flip Flop are J=K=1 and Q=0 and clock pulse
+as shown in fig., After a time interval tp equal to propagation
+delay of NAND gates, the output will change to Q=1.Now we
+have J=1,K=1 and Q=1.If duration of clock pulse(T) is greater
+than propagation delay tp
+, after another time interval of tp
+ the
+output will change back to Q=0,hence the output will oscillate
+back and forth between 0 and 1.The output is uncertain at the
+end of clock pulse if flip flop is level trigger. This situation is
+called race around condition.
+• The race around condition can be avoided if clock pulse is
+reduced than the propagation delay of the flip flop t<sup>p</sup> greather than  T but this
+is not practically feasible.
+• A more practical method for this is use of master slave flip flop
+or edge triggered JK flip flop. 
+
+</p>
+</div>	<div class="courses_row">
+<p>
+<h3> D Flip-Flop</h3>
+One way to eliminate the undesirable condition of the
+indeterminate state in the RS flip-flop is to ensure that
+inputs S and R are never equal to 1 at the same time.
+– This is done in the D flip-flop
+• The D flip-flop has only two inputs: D and CP.
+• The D input goes directly to the S input and its
+complement is applied to the R input.
+• As long as CP is 0, the circuit cannot change state
+regardless of the value of D.
+• The D input is sampled when CP = 1.
+ If D is 1, the Q output goes to 1, placing the circuit in the set state.
+ If D is 0, output Q goes to 0 and the circuit switches to
+the clear state. 
+
+</p>
+</div>	<div class="courses_row">
+<p>
+<h3>T Flip-Flop</h3>
+The T flip-flop is a single-input version of the JK flip-flop
+and is obtained from the JK flip-flop when both inputs are
+tied together.
+• The designation T comes from the ability of the flip-flop to
+"toggle," or complement, its state.
+• Regardless of the present state, the flip-flop complements
+its output when the clock pulse occurs while input T is 1.
+• The characteristic table and characteristic equation show
+that:
+– When T = 0, Q(t + 1) = Q, that is, the next state is the
+same as the present state and no change occurs.
+– When T = 1, then Q (t + 1) = Q', and the state of the
+flip-flop is complemented. 
+
+</p>
+</div>	<div class="courses_row">
+<p>
+<h3>Master-Slave Flip-Flop</h3>
+A master-slave flip-flop is constructed from two
+separate flip-flops.
+o One circuit serves as a master and the other as a slave,
+and the overall circuit is referred to as a master slave
+flip-flop.
+
+</p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>	<div class="courses_row">
+<p>
+<h3>RS Master-Slave Flip-flop </h3>
+It consists of a master flip-flop, a slave flip-flop, and an inverter.
+• When clock pulse CP is 0, the output of the inverter is 1.
+• Since the clock input of the slave is 1, the flip-flop is enabled and output
+Q is equal to Y, while Q' is equal to Y'.
+• The master flip-flop is disabled because CP = 0.
+• When the pulse becomes 1, the information then at the external R and S
+inputs is transmitted to the master flip-flop. The slave flip-flop, however,
+is isolated as long as the pulse is at its 1 level, because the output of the
+inverter is 0.
+• When the pulse returns to 0, the master flip-flop is isolated; this prevents
+the external inputs from affecting it. The slave flip-flop then goes to the
+same state as the master flip-flop. 
+
+</p>
+</div>	<div class="courses_row">
+<p>
+<h3>JK Master-slave Flip-Flop </h3>
+Master-slave JK flip-flop constructed with
+NAND gates is shown in Fig.
+• It consists of two flip-flops; the master flip-flop,
+and the slave flip-flop.
+• The information present at the J and K inputs is
+transmitted to the master flip-flop on the positive
+edge of a clock pulse and is held there until the
+negative edge of the clock pulse occurs, after
+which it is allowed to pass through to the slave
+flip-flop.
+<p>
+	Operation:
+</p>
+<p>
+• The clock input is normally 0, which prevents the J and K
+inputs from affecting the master flip-flop.
+• The slave flip-flop is a clocked RS type, with the master flipflop supplying the inputs and the clock input being inverted by
+NOT gate
+• When the clock is 0, Q = Y, and Q' = Y'.
+• When the positive edge of a clock pulse occurs, the master
+flip-flop is affected and may switch states.
+• The slave flip-flop is isolated as long as the clock is at the 1
+level
+• When the clock input returns to 0, the master flip-flop is
+isolated from the J and K inputs and the slave flip-flop goes to
+the same state as the master flip-flop. 
+
+</p>
+</p>
+</div>	<div class="courses_row">
+<p>
+<h3>Triggering of Flip Flop</h3>
+The state of a flip-flop is switched by a momentary change in the input
+signal. This momentary change is called a trigger.
+• Clocked flip-flops are triggered by pulses.
+• A pulse starts from an initial value of 0, goes momentarily to 1, and
+after a short time, returns to its initial 0 value.
+• A clock signal is a periodic square wave that indefinitely switches
+values from 0 to 1 and 1 to 0 at fixed intervals.
+• A clock pulse may be either positive or negative.
+– A positive clock source remains at o during the interval between
+pulses and goes to 1 during the occurrence of a pulse.
+<p>
+	• An edge triggered flip flop changes state either at positive
+edge(rising edge) or at negative edge(falling edge) of the
+clock pulse and is sensitive to its input only at this
+transition of the clock.
+• A pulse triggered flip flop changes state either at the
+positive pulse (positive level of the pulse) or at negative
+pulse(negative level of pulse)of the applied clock pulse. 
+	
+</p>
+</p>
+</div>	<div class="courses_row">
+
+<p>
+<h3>
+Edge-Triggered Flip-Flop 
+</h3>
+Edge-triggered flip-flop (alternative to master-slave) synchronizes the
+state changes during clock-pulse transitions.
+• In this type of flip-flop, output transitions occur at a specific level of the
+clock pulse.
+• When the pulse input level exceeds this threshold level, the inputs are
+locked out and the flip-flop is therefore unresponsive to further changes in
+inputs until the clock pulse returns to 0 and another pulse occurs.
+• Some edge-triggered flip-flops cause a transition on the positive edge of
+the pulse, and others cause a transition on the negative edge of the pulse.
+• The logic diagram of a D-type positive-edge-triggered flip-flop is shown
+below.
+• It consists of three basic flip-flops. NAND gates 1 and 2 make up one
+basic flip-flop and gates 3 and 4 another. The third basic flip-flop
+comprising gates 5 and 6 provides the outputs to the circuit. Inputs S and
+R of the third basic flip-flop must be maintained at logic-1 for the outputs
+to remain in their steady state values.
+<p>
+When S = 0 and R = 1, the output goes to the set
+state with Q = 1.
+• When S = 1 and R = 0, the output goes to the clear
+state with Q = 0.
+• Inputs S and R are determined from the states of
+the other two basic flip-flops. These two basic
+flip-flops respond to the external inputs D (data)
+and CP (clock pulse). 	
+</p>
+<p>
+	The binary values at the outputs of the four gates when
+CP = 0. Input D may be equal to 0 or 1. In either case, a CP of 0 causes
+the outputs of gates 2 and 3 to go to 1, thus making S = R = 1, which is
+the condition for a steady state output. 
+</p>
+<p>
+	When CP = 1
+– If D = 1 then S changes to 0, but R remains at 1, which
+causes the output of the flip-flop Q to go to 1 (set state).
+– If D = 0 then S = 1 and R = 0. Flip-flop goes to clear
+state (Q = 0). 
+
+</p>
+</p>
+</div>	<div class="courses_row">
+
+<p>
+<h3>
+Direct Inputs 
+</h3>
+Flip-flops available in IC packages sometimes provide special inputs
+for setting or clearing the flip-flop asynchronously.
+• These inputs are usually called direct preset and direct clear. They
+affect the flip-flop on a positive (or negative) value of the input signal
+without the need for a clock pulse.
+• These inputs are useful for bringing all flip-flops to an initial state prior
+to their clocked operation.
+• Example: After power is turned on in a digital system, the states of its
+flip-flops are indeterminate.
+• A clear switch clears all the flip-flops to an initial cleared state and a
+start switch begins the system's clocked operation. The clear switch
+must clear all flip-flops asynchronously without the need for a pulse.
+
+</p>
+
+
+</div>	<div class="courses_row">
+<p>
+<h3>
+Analysis of Clocked Sequential Circuit
+</h3>
+The behavior of a clocked sequential circuit is
+determined from its inputs, outputs and state of the
+flip-flops (i.e., the output of the flip-flops).
+• The analysis of a clocked sequential circuit
+consists of obtaining a table of a diagram of the
+time sequences of inputs, outputs and states.
+– E.g., given a current state and current inputs, how will
+the state and outputs change when the next active clock
+edge arrives??? 
+
+<p>
+	We have a basic procedure for analyzing a clocked
+sequential circuit:
+Write down the equations for the outputs and the flipflop inputs.
+Using these equations, derive a state table which
+describes the next state.
+Obtain a state diagram from the state table.
+• It is the state table and/or state diagram that specifies the
+behavior of the circuit.
+• The flip-flop input equations are sometimes called the
+excitation equations.
+• The state table is sometimes called a transition table. 
+	
+</p>
+</p>
+</div>	<div class="courses_row">
+
+<p>
+<h3>
+State Equations
+</h3>
+A state equation is an algebraic expression that specifies the condition
+for a flip-flop state transition.
+• The left side of the equation denotes the next state of the flip-flop and
+the right side of the equation is a Boolean expression that specifies the
+present state and input conditions that make the next state equal to 1.
+• In above example, D inputs determine the flip-flop’s next state, so it
+is possible to write a set of next-state equations for the circuit:
+ A(t + 1) = A(t)x(t) + B(t)x(t)
+ B(t + 1) = A '(t)x(t)
+• In compact form:
+ A(t + 1) = Ax + Bx
+ B(t + 1) = A'x
+• Similarly, the present-state value of the output y can be expressed
+algebraically as : y(t) = [A(t) + B(t)]x'(t)
+• Removing the symbol (t) for the present state, the output Boolean
+function: y = (A + B)x' 
+
+</p>
+
+</div>	<div class="courses_row">
+
+
+<p>
+<h3>
+State table 
+</h3>
+The time sequence of inputs, outputs, and flip-flop states can be
+enumerated in a state table.
+• The state table for the example circuit.
+
+<p>
+	The table consists of four sections:
+Present state: shows the states of flipflops A and B at any given time t
+Input: gives a value of x for each
+possible present state
+Next state: shows the states of the flipflops one clock period later at
+time t + 1.
+Output: gives the value of y for each
+present state.
+Next state and output column is derived
+from the state equations.
+	
+</p>
+</p>
+
+</div>	<div class="courses_row">
+
+
+<p>
+<h3>
+State Diagram
+</h3>
+The information available in a state table can be represented
+graphically in a state diagram.
+• In this diagram, a state is represented by a circle, and the transition
+between states is indicated by directed lines connecting the circles.
+• Each directed line is labeled ‘inputs/outputs’.
+
+</p>
+
+</div>	<div class="courses_row">
+
+
+<p>
+<h3>
+State Reduction and Assignment 
+</h3>
+<p>
+<h3>State Reduction </h3>
+</p>
+<p>
+	The reduction of the number of flip-flops in a sequential circuit is
+referred to as the state-reduction problem.
+• State-reduction, reducing the number of states in a state table, while
+keeping the external input–output requirements unchanged, can reduce
+the number of flip-flops used in a sequential circuit.
+• Since m flip-flops produce 2m states, a reduction in the number of
+states may (or may not)result in a reduction in the number of flipflops.
+• Reducing the number of flip-flops sometimes results the equivalent
+circuit with fewer flip-flops but more combinational gates to realize its
+next state and output fewer flip flops but more combinational gates to
+realize its next state and output logic. 
+</p>
+<p>
+<h3>State Reduction Example </h3>
+</p>
+<p>
+	Two circuits are equivalent if
+identical input sequences are
+applied to the two circuits and
+identical outputs occur for all
+input sequences, then one may
+be replaced by the other.
+• State reduction reduces the
+number of states in a sequential
+circuit without altering the
+input–output relationships.
+• Only the input-output
+sequences are important in this
+example.
+• Consider the input sequence
+01010110100 starting from the
+initial state a 
+	<p>
+		State table is more convenient for state reduction than a diagram.
+• State reduction algorithm: “Two states are said to be equivalent if, for each
+member of the set of inputs, they give exactly the same output and send
+the circuit either to the same state or to an equivalent state.”
+• When two states are equivalent, one of them can be removed without
+altering the input–output relationships. 
+		
+</p>
+</p>
+</p>
+
+</div>	<div class="courses_row">
+
+
+
+<p>
+<h3>
+State Assignment 
+</h3>
+The cost of the combinational-circuit part of a sequential
+circuit can be reduced by using the known simplification
+methods for combinational circuits.
+• However, there is another factor, known as the stateassignment problem that comes into play in minimizing the
+combinational gates.
+• State-assignment procedures are concerned with methods for
+assigning binary values to states in such a way as to reduce
+the cost of the combinational circuit that drives the flip-flops.
+• States must be assigned with unique coded binary values to
+implement the physical components.
+• The simplest way to code states is to use binary counting code
+or Gray code without guaranteeing a better result. 
+<p>
+</p>
+A different assignment will result in a state table with different binary
+values for the states.
+• The binary form of the state table is used to derive the next state and
+output-forming combinational logic part of the sequential circuit.
+• The complexity of the combinational circuit depends on the binary
+state assignment chosen.
+• Sometimes, the name transition table is used for a state table with a
+binary assignment. 
+
+</p>
+
+
+</div>	<div class="courses_row">
+
+<p>
+<h3>
+ Design Procedure of Sequential Circuit 
+</h3>
+A synchronous sequential circuit is made up of flip-flops and
+combinational gates.
+• The design of the circuit consists of choosing the flip-flops and then
+finding a combinational gate structure that, together with the flip-flops,
+produces a circuit which fulfills the stated specifications.
+• The design steps for synchronous sequential circuits can be summarized
+as:
+1. From the word description and specifications of the desired operation, derive a
+state diagram for the circuit.
+2. Obtain the State table
+3. Reduce the number of states if necessary.
+4. Assign binary values to the states.
+5. Determine the number of flip-flops needed and assign a letter symbol to each.
+6. Choose the type of flip-flops to be used
+7. From the state table, derive the circuit excitation and output tables.
+8. Derive the simplified flip-flop input equations and output equations.
+9. Draw the logic diagram
+
+</p>
+
+</div>	<div class="courses_row">
+
+<p>
+<h3>
+Design Example 
+</h3>
+The state diagram consists of four
+states with binary values already
+assigned.
+• Directed lines contain single binary
+digit without a slash, we conclude
+that there is one input variable and
+no output variables. (The state of the
+flip-flops may be considered the
+outputs of the circuit).
+• The two flip-flops needed to
+represent the four states are
+designated A and B.
+• The input variable is designated x. 
+
+</p>
+
+</div>	<div class="courses_row">
+
+<p>
+<h3>
+Difference between synchronous and
+asynchronous circuit 
+</h3>
+The behavior of a synchronous sequential circuit can be defined from
+the knowledge of its signals at discrete instants of time.
+• The behavior of an asynchronous sequential circuit depends upon the
+input signals at any instant of time and the order in which the inputs
+change signals at any instant of time and the order in which the inputs
+change.
+• The storage elements commonly used in asynchronous sequential
+circuits are time-delay devices. Thus, an asynchronous sequential
+circuit may be regarded as a combinational circuit with feedback (no
+actual storage elements used).
+• Asynchronous sequential circuit may become unstable at times,
+imposing many difficulties on the designer. 
+
+
+</p>
+</div>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><div class="courses_row">
+
+<p>
+<h3>
+Latch and Flip Flops 
+</h3>
+The primary difference between a flip-flop and latch is the EN/CLOCK
+input.
+The flip-flop’s CLOCK input is edge sensitive, meaning the flip-flop’s
+output changes on the edge (rising or falling) of the CLOCK input.
+The latch’s EN input is level sensitive, meaning the latch’s output changes
+on the level (high or low) of the EN input.
+
+</p>		
+	</div>	
+	
+	
+	
+	
+		
+						
+				<!-- Course -->
+				<a id="dowloaddl3"></a>
+
+			<button type="submit"><a href="https://doc-08-9o-docs.googleusercontent.com/docs/securesc/2frrppipru5uoajki3r077dap3aqcl7c/kljgpkblp8ejgopq91hols4i9mocei9o/1582014600000/13596772427178929991/07642160100281731799/0B9KSRDxUu34fMlRtRWtuaGpNV1RwMlhzYVBpd25aZ2Z4Tms0?e=download&authuser=0">Download Now !!</a></button>
+				
+
+				<!-- Course -->
+				
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- shishirgajurel.githu.io -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="9046940496"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+				<!-- Course -->
+				
+						
+						</p>
+					
+						
+						
+					
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-5 col-sm-9 sidebar">
+					
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Unit( Click the topic !! )</h4>
+						<ul>
+							<li><a href="digitallogic1.html">Binary Codes</a></li>
+							<li><a href="digitallogic2.html">Integrated Circuits </a></li>
+							<li><a href="digitallogic3.html">Synchronous and Asynchronous</a></li>
+							<li><a href="digitallogic4.html">Registers and Counters</a></li>
+							
+						</ul>
+					</div>
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Titles ( Click the title !!)</h4>
+						<ul>
+							
+						    <li><a href="#Synchronous vs. Asynchronous"><h5>Synchronous vs. Asynchronous  </h5></a></li>
+						    <li><a href="#Flip Flop"><h5> Flip Flop </h5></a></li>
+							<li><a href="#Basic flip-flop circuit (direct-coupled RS flip-flop or SR latch)"><h5>Basic flip-flop circuit (direct-coupled RS flip-flop or SR latch)  </h5></a></li>
+							<li><a href="#Basic flip-flop circuit: SR Latch with NAND Gates"><h5> Basic flip-flop circuit: SR Latch with NAND Gates </h5></a></li>
+							<li><a href="#SR Latch with Control Input"><h5>SR Latch with Control Input  </h5></a></li>
+							<li><a href="#Clocked RS Flip-Flop: NOR gate"><h5>Clocked RS Flip-Flop: NOR gate  </h5></a></li>
+							<li><a href="#Clocked RS Flip-Flop: NAND gate"><h5>Clocked RS Flip-Flop: NAND gate  </h5></a></li>
+							<li><a href="#Clocked RS Flip-Flop"><h5> Clocked RS Flip-Flop </h5></a></li>
+							<li><a href="#Clocked JK Flip-Flop"><h5>Clocked JK Flip-Flop  </h5></a></li>
+							<li><a href="#Clocked JK Flip-Flop: Race around condition"><h5>Clocked JK Flip-Flop: Race around condition  </h5></a></li>
+							<li><a href="#D Flip-Flop"><h5>D Flip-Flop  </h5></a></li>
+							<li><a href="#T Flip-Flop"><h5>T Flip-Flop  </h5></a></li>
+							<li><a href="#Master-Slave Flip-Flop"><h5> Master-Slave Flip-Flop </h5></a></li>
+							<li><a href="#RS Master-Slave Flip-flop"><h5>RS Master-Slave Flip-flop  </h5></a></li>
+							<li><a href="#JK Master-slave Flip-Flop"><h5> JK Master-slave Flip-Flop </h5></a></li>
+							<li><a href="#Triggering of Flip Flop"><h5> Triggering of Flip Flop </h5></a></li>
+							<li><a href="#Edge-Triggered Flip-Flop"><h5>Edge-Triggered Flip-Flop  </h5></a></li>
+							<li><a href="#Direct Inputs"><h5>Direct Inputs  </h5></a></li>
+							<li><a href="#Analysis of Clocked Sequential Circuit"><h5> Analysis of Clocked Sequential Circuit </h5></a></li>
+							<li><a href="#State Equations"><h5>  State Equations</h5></a></li>
+							<li><a href="#State table"><h5> State table </h5></a></li>
+							<li><a href="#State Diagram"><h5> State Diagram </h5></a></li>
+							<li><a href="#State Reduction and Assignment"><h5>State Reduction and Assignment  </h5></a></li>
+							<li><a href="#State Reduction"><h5>State Reduction  </h5></a></li>
+							<li><a href="#State Reduction Example"><h5> State Reduction Example </h5></a></li>
+							<li><a href="#State Assignment"><h5>State Assignment  </h5></a></li>
+							<li><a href="#Design Procedure of Sequential Circuit"><h5> Design Procedure of Sequential Circuit </h5></a></li>
+							<li><a href="#Design Example"><h5> Design Example </h5></a></li>
+							<li><a href="#Difference between synchronous and asynchronous circuit"><h5>Difference between synchronous and asynchronous circuit  </h5></a></li>
+							<li><a href="#Latch and Flip Flops"><h5>Latch and Flip Flops  </h5></a></li>
+							
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer-section spad pb-0">
+		<div class="footer-top">
+			<div class="footer-warp">
+
+				<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+			</div>
+		</div>
+	</footer> 
+	<!-- footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
