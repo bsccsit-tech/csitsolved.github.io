@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>C Programming all notes</title>
+	<script data-ad-client="ca-pub-3847456434911475" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<meta charset="UTF-8">
+	<meta name="description" content="Welcome !! Here you can find Introduction to Graphics in C,C- Graphics,initgraph(),gmode,Graphics mode,Draw a point and a line,program to draw a line,Program to draw a circle,A program to draw concentric circles,Program to draw an arc,Program to move a car">
+	<meta name="keywords" content="Introduction to Graphics in C,C- Graphics,initgraph(),gmode,Graphics mode,Draw a point and a line,program to draw a line,Program to draw a circle,A program to draw concentric circles,Program to draw an arc,Program to move a car">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							
+						
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/3.jpg">
+		<div class="container">
+			<div class="site-breadcrumb">
+				
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	
+	<!-- search section end -->
+
+
+	<!-- Page  -->
+	<section class="blog-page spad pb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9">
+					<!-- blog post -->
+					<div class="blog-post">
+						<img src="img/categories/2.jpg" alt="">
+						<h3>C Programming </h3>
+						<div class="blog-metas">
+							<div class="blog-meta author">
+								<div class="post-author set-bg" data-setbg="img/authors/1.jpg"></div>
+								<a href="#">HGC Sir</a>
+							</div>
+							<div class="blog-meta">
+								<a href="#">Development</a>
+							</div>
+						</div>
+			
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+						<h3> Introduction to Graphics in C</h3>
+						<div>
+						<p>
+							<div> 
+							<p> 
+								<h3> C- Graphics</h3>
+								Graphics options are used in c-programming to draw different graphical shapes. <br>
+To write program that uses graphics to draw different shapes, first of all you must initialize the graphics.<br>
+The header file required is  graphics.h<br>
+To initialize the graphics you have to call the initgraph() function that will initialize the graphics mode on the computer.<br>
+Call to function   initgraph() is done as<br>
+initgraph(&gdriver,&gmode, “path_to_driver”);<br>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+								</p>
+							
+							</div>
+							<div>
+						<p>
+								<h3> initgraph()</h3>
+								
+								initgraph()  initializes the graphics system by loading a graphics driver from disk (or validating a registered driver) then putting the system into graphics mode.<br>
+ initgraph()  also resets all graphics settings (color, palette, current position, viewport, etc.) to their defaults, then resets graphresult to 0. <br>
+e.g. initgraph(&gdriver,&gmode,“c:\\tc\\bgi”);<br>
+gdriver : It is declared as integer variable  that specifies the graphics driver to be used. <br>
+
+
+
+
+								</p>
+						
+						</div>
+					
+					<p>
+						<div>
+					<h3> gmode: Graphics mode </h3>
+							It is also declared as integer variable which specifies the initial graphics mode (unless gdriver = DETECT).<br>
+If gdriver = DETECT, initgraph sets gmode to the highest resolution available for the detected driver. <br>
+path_to_driver:<br>
+Specifies the directory path where initgraph()  looks for graphics drivers (e.g. egavga.bgi in turbo c++)<br>
+If the driver is not  there, initgraph()  looks in the current directory.<br>
+If path_to_driver is null, the driver files must be in the current directory.<br>
+After a call to initgraph, gdriver is set to the current graphics driver, and gmode is set to the current graphics mode. <br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+					</div>
+					</p>
+					<p>
+						
+					<div>
+				
+				<h3> First Program: Draw a point and a line</h3>
+				#include<graphics.h><br>
+#include<stdio.h> <br>
+#include<conio.h> <br>
+void main(void) <br>
+{ <br>
+	int gdriver = DETECT, gmode; <br>
+	int x1 = 200, y1 = 200; <br>
+	int x2 = 300, y2 = 300; <br>
+	clrscr(); <br>
+	initgraph(&gdriver, &gmode, "c:\\tc\\bgi");<br> 
+	line(x1, y1, x2, y2); <br>
+	getch(); <br>
+	closegraph(); <br>
+}<br>
+
+				</div>	
+				</p>
+				<p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+					<div>
+						<h3> /*program to draw a line*/
+</h3>
+						
+						#include <graphics.h><br>
+#include <stdlib.h><br>
+#include <stdio.h><br>
+#include <conio.h><br>
+int main()<br>
+{<br>
+	int gdriver = DETECT, gmode, errorcode;		/* request auto detection */  	<br>
+ 	initgraph(&gdriver, &gmode, “\\tc\\bgi");		/* initialize graphics mode */ <br>
+	errorcode = graphresult();  			/* read result of initialization */ <br> 
+	if (errorcode != grOk)  		  /* an error occurred */  <br>
+	{    <br>
+		printf("Graphics error: %s\n", grapherrormsg(errorcode));  <br>  	
+		printf("Press any key to halt:");    <br>
+		getch();   <br>   exit(1);                         /* return with error code */  <br>
+	}			<br>
+	initwindow(200,200);			 /* draw a line */ <br>
+	 line(0, 0, getmaxx(), getmaxy()); 	/* clean up */<br> 
+	 getch();  <br>
+	closegraph(); <br> 
+	return 0;<br>
+}<br>
+
+						</div>
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+						</p>
+					
+					<p>
+						
+						<div>
+						<h3> /*Program to draw a circle*/
+</h3>
+							#include <graphics.h><br>
+#include <stdlib.h><br>
+#include <stdio.h><br>
+#include <conio.h><br>
+int main()<br>
+{<br>
+	Int x,y;  int gdriver = DETECT, gmode, errorcode;<br>
+	initgraph(&gdriver, &gmode, "");<br>
+	errorcode = graphresult();<br>
+	if (errorcode != grOk) <br>
+	 {   <br> 
+		printf("Graphics error: %s\n", grapherrormsg(errorcode));  <br>   
+		printf("Press any key to halt:");    <br> 
+		getch(); <br>    
+		exit(1);<br> 
+	}<br> 
+	setcolor(RED);<br> 
+	circle(x,y,200);<br> 
+	getch();  <br> 
+	closegraph();<br>   
+	return 0;<br> 
+}<br> 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+						
+						</div>
+						</p>
+					
+					<p>
+						<div>
+							<h3> A program to draw concentric circles
+</h3>
+							
+							#include <graphics.h><br> 
+ 
+int main()<br> 
+{ <br> 
+   int gd = DETECT, gm;<br> 
+   int x = 320, y = 240, radius;<br> 
+ 
+   initgraph(&gd, &gm, “\\tc\\bgi");<br> 
+ 
+   for ( radius = 25; radius <= 125 ; radius = radius + 20)<br> 
+      circle(x, y, radius);<br> 
+ 
+   getch();<br> 
+   closegraph();<br> 
+   return 0;<br> 
+}
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+							</div>
+							</p>
+					<p>
+						
+						<div>
+							<h3> Program to draw an arc
+</h3>
+							#include<graphics.h><br> 
+#include<conio.h> <br> 
+main()<br> 
+{   <br> 
+	int gd = DETECT, gm;  <br>   
+	initgraph(&gd, &gm, “\\tc\\bgi");<br>     
+	arc(100, 100, 0, 135, 50); <br>    
+	getch(); <br>   
+	closegraph(); <br>   
+	return 0;<br> 
+}<br> 
+							
+							</div>
+							</p>
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+					<p>
+						<div>
+							<h3>  Program to move a car
+</h3>
+							#include <graphics.h><br> 
+#include <dos.h> <br> 
+int main()<br> 
+{   
+	int i, j = 0, gd = DETECT, gm;  <br>   	initgraph(&gd,&gm,"C:\\TC\\BGI");  <br>   	settextstyle(DEFAULT_FONT,HORIZ_DIR,2); <br>   	
+	outtextxy(25,240,"Press any key to view the moving car");   <br>  
+	getch();    <br> 
+	for( i = 0 ; i <= 420 ; i = i + 10, j++ )  <br> 
+	 {      <br> 	rectangle(50+i,275,150+i,400);  <br>     				
+		rectangle(150+i,350,200+i,400);  <br>     
+		circle(75+i,410,10);    <br>   
+		circle(175+i,410,10);  <br>     
+		setcolor(j); <br>      
+		delay(100);  <br>      
+		if( i == 420 ) <br>         
+			break;   <br>    
+		if ( j == 15 )  <br>        
+			j = 2;  <br>      
+		cleardevice(); // clear screen <br>  
+	}    <br> 
+	getch();  <br>  
+	closegraph(); <br>   
+	return 0;<br> 
+}<br> 
+
+							</div>
+							</p>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+					
+					
+					
+					
+					
+							</p>
+						
+						</div>
+						
+						<button type="submit"><a href="https://drive.google.com/open?id=18GhcSThu8lDXybcGRok6A25qZHCGlIN5">Download Now !!</a></button>
+						
+					
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-5 col-sm-9 sidebar">
+					
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Unit</h4>
+						<ul>
+							<li><a href="c_programming.html">1. Problem Solving with Computer</a></li>
+							<li><a href="c_programming2.html">2. Elements of C</a></li>
+							<li><a href="c_programming3.html">3. Input and Output</a></li>
+							<li><a href="c_programming4.html">4. Operators and Expression</a></li>
+							<li><a href="c_programming5.html">5. Control Statemet</a></li>
+							<li><a href="c_programming6.html">6. File Handling</a></li>
+						</ul>
+					</div>
+					<div class="sb-widget-item">
+						<h4 class="sb-w-title">Titles</h4>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer-section spad pb-0">
+		<div class="footer-top">
+			<div class="footer-warp">
+
+				<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+			</div>
+		</div>
+	</footer> 
+	<!-- footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

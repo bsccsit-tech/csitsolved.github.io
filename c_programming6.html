@@ -3,31 +3,17 @@
 <head>
 	<title>C Programming all notes</title>
 	<script data-ad-client="ca-pub-3847456434911475" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script data-ad-client="ca-pub-3847456434911475" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<meta charset="UTF-8">
-	<meta name="description" content="Welcome to C programming unit Five !! Here you can find this topics and download the pdf also  !! Control statements,Decision Making and Branching,
-The if-else Statement,Example: Find a number even or odd,Nested if-else statement,The if-else-if ladder,The selection : Switch-case,Switch-case example,The exit() function,Loops: iterative methods,Control Loops in C,The while statement,Flow of Control in while,Nesting while Statements,Use of break statement in while loop,Use of continue statement in loop,For Loop,Rules regarding for loop,How for loop works,Use of continue and break,The do while statement,Use of continue in while, do while, and for loop ">
-	<meta name="keywords" content="Control statements,
-Decision Making and Branching,
-The if-else Statement,
-Example: Find a number even or odd,
-Nested if-else statement,
-The if-else-if ladder,
-The selection : Switch-case,
-Switch-case example,
-The exit() function,
-Loops: iterative methods,
-Control Loops in C,
-The while statement,
-Flow of Control in while,
-Nesting while Statements,
-Use of break statement in while loop,
-Use of continue statement in loop,
-For Loop,
-Rules regarding for loop,
-How for loop works,
-Use of continue and break,
-The do while statement,
-Use of continue in while, do while, and for loop">
+	<meta name="description" content="Welcome Here you can find Concept of File,Opening and closing of File (naming, opening,and closing a file), Input Output Operations in File (reading data
+from file, writing data to a file), Random access in File (ftell(), fseek(), rewind()), Error Handling in Files (feof(), ferror()),(Note: address some of the functions associated
+with file handling, e.g. fopen(), fclose(), fgetc(),
+fputc(), fprintf(), fscanf()) And you can download also !! ">
+	<meta name="keywords" content="Concept of File,Opening and closing of File (naming, opening,and closing a file), Input Output Operations in File (reading data
+from file, writing data to a file), Random access in File (ftell(), fseek(), rewind()), Error Handling in Files (feof(), ferror()),(Note: address some of the functions associated
+with file handling, e.g. fopen(), fclose(), fgetc(),
+fputc(), fprintf(), fscanf())">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
 	<link href="img/favicon.ico" rel="shortcut icon"/>
@@ -113,9 +99,737 @@ Use of continue in while, do while, and for loop">
 								<a href="#">Development</a>
 							</div>
 						</div>
-						
-				
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+				<div>
+						<p>
+					<h3>Concept of File </h3>
 					
+
+• A file is a collection of related data that a computers
+treats as a single unit.<br>
+• Computers store files to secondary storage device
+so that the contents of files remain intact when a
+computer shuts down and can be obtained any
+time we require those contents.<br>
+• When a computer reads a file, it copies the file from
+the storage device to memory.<br>
+• When it writes to a file, it transfers data from
+memory to the storage device.<br>
+• In order to use file we have to learn about File I/O
+i.e. how to read from a file and how to write in a file
+with a C program.<br>
+					
+					• C uses a structure called FILE (defined in
+stdio.h) to store the attributes of a file.<br>
+• Steps to follow for File Processing<br>
+1.Create the File Pointer to access each file used.File
+pointer is a pointer variable using the FILE structure
+as:<br>
+FILE *p;<br>
+
+where p is name of file pointer.<br>
+1. Open the file, associating the pointer name with the file
+name.<br>
+2. Read and/or write the data from file.<br>
+3. Close the file after use.<br>
+					
+					
+					
+					<h3>Opening and Closing a File</h3>
+					• Declare file pointer for opening or closing file
+as FILE *fp;<br>
+• You can use multiple variables to access
+different files in a program by declaring as – FILE *fp1,*fp2,*fp3 ;
+• Function fopen() is used to open the file for<br>
+read or write operation which requires
+filename to open as first argument and file
+mode as second argument as – fp=fopen(“myfile.dat”, “filemode”);<br>
+					
+					
+					
+					<h3>File Open</h3>
+					
+					• The file open function fopen() serves two
+purposes:<br>
+– It makes the connection between the physical file
+and the stream.<br>
+– It creates “a program file structure to store the
+information” C needs to process the file.<br>
+• Syntax:<br>
+filepointer=fopen(“filename”, “mode”);<br>
+					
+					<h3> More On fopen()</h3>
+					
+					• The file mode tells C how the program will use
+the file.<br>
+• The filename indicates the system name and
+location for the file.<br>
+• We assign the return value of fopen to our
+pointer variable:<br>
+spData = fopen(“MYFILE.TXT”, “w”);<br>
+spData = fopen(“A:\\MYFILE.TXT”, “w”);<br>
+					
+					<h3>  Closing a File</h3>
+					• When we finish with a mode, we need to close
+the file before ending the program or
+beginning another mode with that same file.<br>
+• To close a file, we use fclose() and the
+pointer variable as :<br>
+fclose(spData);<br>
+– Here spData is pointer variable<br>
+					
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+					
+					<h3>fprintf()</h3>
+					fprintf() is a function used for formatted output
+in file a file same as printf() does in stardard I/O<br>
+Syntax:<br>
+fprintf (fp,“format_string",variables);<br>
+Example:<br>
+int i = 12;<br>
+float x = 2.356;<br>
+char ch = 's';<br>
+FILE *fp;<br>
+fp=fopen(“out.txt”,”w”);<br>
+fprintf (fp, "%d %f %c", i, x, ch);<br>
+					
+					<h3> fscanf()</h3>
+					
+					• fscanf() is a function used for formatted input
+in file a file same as printf() does in stardard I/O<br>
+Syntax:<br>
+fscanf (fp,“format_string",identifiers);<br>
+Example:<br>
+FILE *fp;<br>
+Fp=fopen(“input.txt”,”r”);<br>
+int i;<br>
+fscanf (fp,“%d",i);<br>
+					
+					<h3> getc()</h3>
+					Syntax:<br>
+identifier = getc (file pointer);<br>
+Example:<br>
+FILE *fp;<br>
+fp=fopen(“input.txt”,”r”);<br>
+char ch;<br>
+ch = getc (fp);<br>
+					
+					<h3> putc()</h3>
+					
+					• Write a single character to the output file,
+pointed to by fp.<br>
+Example:<br>
+FILE *fp;<br>
+char ch;<br>
+putc (ch,fp); /* writes character ch to a file pointed<br>
+by file pointer fp*/<br>
+					
+					<h3> End of File</h3>
+					• There are a number of ways to test for the end-of-file condition.
+Another way is to use the value returned by the fscanf function:<br>
+FILE *fptr1;<br>
+int istatus ;<br>
+istatus = fscanf (fptr1, "%d", & var) ;<br>
+if ( istatus == feof(fptr1) )<br>
+{<br>
+printf ("End-of-file encountered.\n”) ;<br>
+}<br>
+• EOF is special constand used to check the End of file condition<br>
+if( getc(fp)== EOF )<br>
+{<br>
+printf(“End of file Reached.\n”);<br>
+}<br><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+					
+					<h3>Reading and Writing Files</h3>
+					
+					#include < stdio.h><br>
+int main ( )<br>
+{<br>
+FILE *outfile, *infile ;<br>
+int b = 5, f ;<br>
+float a = 13.72, c = 6.68, e, g ;<br>
+outfile = fopen ("testdata", "w") ;<br>
+fprintf (outfile,"%f %d %f ", a, b, c) ;<br>
+fclose (outfile) ;<br>
+infile = fopen ("testdata", "r") ;<br>
+fscanf (infile,"%f %d %f", &e, &f, &g) ;<br>
+printf ("%f %d %f \n ", a, b, c) ;<br>
+printf ("%f %d %f \n ", e, f, g) ;<br>
+}<br>
+					
+					<h3> Example feof()</h3>
+					
+					• feof() function is also used to check the end of file
+Syntax: feof(file pointer); returns TRUE if end of file reached.<br>
+#include < stdio.h><br>
+#include< conio.h><br>
+void main()<br>
+{<br>
+char ch;<br>
+FILE *fp;<br>
+fp=fopen("out.txt","r");<br>
+while(!feof(fp))<br>
+{<br>
+ch=getc(fp);<br>
+printf("\n%c",ch);<br>
+}<br>
+getch();<br>
+}<br>
+		
+					<h3> fread ()</h3>
+					
+					Declaration:<br>
+size_t fread(void *ptr, size_t size, size_t n, FILE *stream);
+Remarks:<br>
+• fread() reads a specified number of equal-sized data items
+from an input stream into a block.<br>
+ptr = Points to a block into which data is read<br>
+size = Length of each item read, in bytes<br>
+n = Number of items read<br>
+stream = file pointer<br>
+					
+					<h4>Example</h4>
+					
+					#include< stdio.h><br>
+int main()<br>
+{<br>
+FILE *fp;<br>
+char buffer[11];<br>
+if(fp=fopen("file1.c","r"))<br>
+{<br>
+fread(buffer,1,10,fp);<br>
+buffer[10]=0;<br>
+fclose(fp);<br>
+printf("First 10 characters of the file :\n%s\n",buffer);<br>
+}<br>
+getch();<br>
+return 0;<br>
+}<br>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+					<h3> fwrite()</h3>
+					Declaration:<br>
+size_t fwrite(const void *ptr, size_t size, size_t n, FILE*stream);<br>
+Remarks:<br>
+• fwrite() appends a specified number of equal-sized data items to an output file.<br>
+ptr = Pointer to any object; the data written begins at ptr<br>
+size = Length of each item of data<br>
+n =Number of data items to be appended<br>
+stream = file pointer<br>
+Example:<br>
+#include <stdio.h><br>
+int main()<br>
+{<br>
+char a[10]={'1','2','3','4','5','6','7','8','9','a'};<br>
+FILE *fp;<br>
+fp=fopen("Project.txt","w");<br>
+fwrite(a,1,10,fp);<br>
+fclose(fp);<br>
+return 0;<br>
+}<br>
+					
+					
+					<h3> File I/O</h3>
+					• The Standard I/O Library provides similar routines for
+file I/O to those used for standard I/O.<br>
+• The routine: getc(fp) is similar to getchar() and<br>
+• The routine putc(c,fp) is similar to putchar(c).<br>
+• Thus the statement c = getc(fp); reads the next
+character from the file referenced by file pointer fp
+and<br>
+• the statement putc(c,fp); writes the character c
+into file referenced by fp.<br>
+					<h4>File I/O : Example</h4>
+					#include <stdio.h><br>
+#include <conio.h><br>
+int main()<br>
+{<br>
+FILE *fp;<br>
+char c ;<br>
+fp = fopen("prog.c", "r" );<br>
+c = getc( fp ) ;<br>
+while ( c != EOF )<br>
+{<br>
+putchar( c );<br>
+c = getc ( fp );<br>
+}<br>
+fclose( fp );<br>
+getch();<br>
+return 0;<br>
+}<br><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+Note: EOF is defined in <stdio.h> representing End Of File.<br>
+• By allowing the user enter a file name, which would be stored in a string, we can modify
+the above to make it an interactive as:<br>
+/* file2.c :Prompt user for filename and display file on screen Display
+contents of a file entered by user on screen.*/<br>
+#include <stdio.h><br>
+#include <conio.h><br>
+int main()<br>
+{<br>
+FILE *fp;<br>
+char c ;<br>
+char filename[40];<br>
+printf("Enter filename to open: ");<br>
+gets(filename);<br>
+fp = fopen( filename, "r" );<br>
+c = getc( fp ) ;<br>
+while ( c != EOF )<br>
+{<br>
+putchar( c );<br>
+c = getc ( fp );<br>
+}<br>
+fclose( fp );<br>
+getch();<br>
+return 0;<br>
+}<br>
+• The above program has limitations that if the file that we ask
+to open does not exists then file couldn’t be opened and
+program will crash !!<br>
+• If file couldn’t be opened , it returns NULL. Thus by
+checking the value returned by fopen(), you can determine if
+the file was opened correctly and take appropriate action<br>
+• e.g.<br>
+fp = fopen (filename, “r”) ;<br>
+if ( fp == NULL)<br>
+{<br>
+printf(“Cannot open %s for reading
+\n”, filename );<br>
+exit(1) ;<br>
+}<br>
+/* file3.c: Display contents of a file on screen filename entered by user,
+check for file existance */<br>
+#include <stdio.h><br>
+#include <conio.h><br>
+#include <stdlib.h><br>
+int main()<br>
+{<br>
+FILE *fp; char c ; char filename[40];<br>
+printf("Enter filename to open: ");<br>
+gets(filename);<br>
+fp = fopen( filename, "r" );<br>
+if ( fp == NULL)<br>
+{<br>
+printf("Cannot open %s for reading \n", filename );<br>
+exit(1) ;<br>
+}<br>
+c = getc( fp ) ;<br>
+while ( c != EOF )<br>
+{<br>
+putchar( c );<br>
+c = getc ( fp );<br>
+}<br>
+fclose( fp );<br>
+getch();<br>
+return 0;<br>
+}<br>
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+					<h3> Retry Entering correct file name</h3>
+					Alternatively, you could prompt the user to enter the filename again, and try
+to open it again:<br>
+fp = fopen (fname, “r”) ;<br>
+while ( fp == NULL)<br>
+{<br>
+printf(“Cannot open %s for reading \n”, fname );<br>
+printf(“\n\nEnter filename :” );<br>
+gets( fname );<br>
+fp = fopen (fname, “r”) ;<br>
+}<br>
+Exercise: Modify the above code fragment to allow the user 3
+chances to enter a valid filename. If a valid file name is not
+entered after 3 chances, terminate the program .<br>
+					
+					
+					<h3> More examples</h3>
+					
+					/*filecount.c : Count number of lines and characters in a
+file*/<br>
+#include <stdio.h><br>
+#include <conio.h><br>
+#include <process.h><br>
+int main()<br>
+{<br>
+FILE *fp;<br>
+int c , nc, nlines;<br>
+char filename[40] ;<br>
+nlines = 1 ;<br>
+nc = 0;<br>
+printf("Enter file name: ");<br>
+gets( filename );<br>
+fp = fopen( filename, "r" );<br>
+if ( fp == NULL )<br>
+{<br>
+printf("Cannot open %s for reading \n", filename );<br>
+exit(1); /* terminate program */<br>
+}<br>
+c = getc( fp ) ;<br>
+while ( c != EOF )<br>
+{<br>
+if ( c == '\n' )<br>
+nlines++ ;<br>
+nc++ ;<br>
+c = getc ( fp );<br>
+}<br>
+fclose( fp );<br>
+if ( nc != 0 )<br>
+{<br>
+printf("There are %d characters in %s
+\n", nc, filename );<br>
+printf("There are %d lines \n", nlines );<br>
+}<br>
+else<br>
+printf("File: %s is empty \n", filename );<br>
+getch();<br>
+return 0;<br>
+}<br>
+					
+					<h3> Writing character to file</h3>
+					• The previous programs have opened files for reading and
+read characters from them. To write to a file, the file must be
+opened for writing mode e.g.<br>
+fp = fopen(filename,“w” );<br>
+• If the file does not exist already, it will be created.<br>
+• If the file does exist, it will be overwritten!<br>
+• So, be careful when opening files for writing, in case you
+destroy a file unintentionally!!!!<br>
+• Opening files for writing can also fail.<br>
+• If you try to create a file in another users directory where you
+do not have access you will not be allowed and fopen() will
+fail.<br>
+• Also if there is no sufficient memory to create file, it also
+fails.<br>
+• So check whether file created or not after calling fopen().<br>
+					
+					
+					<h3> Character output to file</h3>
+					• The function putc( c, fp ) writes a character to the file associated with the file pointer fp.
+Example: Write a file copy program which copies the file “file1.c” to “file1.bak”<br>
+Outline of the solution:<br>
+– Open files appropriately<br>
+– Check open succeeded or not<br>
+– Read characters from file1.c and<br>
+– Write characters to file1.bak until all characters copied<br>
+– Close files<br>
+The step “Read characters .... and write ..” may be refined to:<br>
+read character from file1.c<br>
+while not end of file do<br>
+begin<br>
+write character to file1.bak<br>
+read next character from file1.c<br>
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+					
+					<h3> Command line arguments in main()</h3>
+					• Accessing the command line arguments is a very useful facility. It enables you to provide
+commands with arguments that the command can use e.g. the command<br>
+file prog.c<br>
+where file is the command name takes the argument "prog.c" and opens a file with
+that name, which it then displays.<br>
+• The command line arguments include the command name itself so that in the above
+example, "file" and "prog.c" are the command line arguments.<br>
+• The first argument i.e. "file" is argument number zero, the next argument, "prog.c", is
+argument number one and so on.<br>
+• To access these arguments from within a C program, you pass parameters to the function
+main().<br>
+• The use of arguments to main is a key feature of many C programs.<br>
+• The declaration of main looks like this:<br>
+int main (int argc, char *argv[])<br>
+• This declaration states that main returns an integer value (used to determine if the
+program terminates successfully)<br>
+• argc is the number of command line arguments including the command itself i.e argc must
+be at least 1<br>
+• argv is an array of the command line arguments<br>
+					
+					• The declaration of argv means that it is an array of pointers to
+strings (the command line arguments).<br>
+• By the normal rules about arguments whose type is array,
+what actually gets passed to main is the address of the first
+element of the array.<br>
+• As a result, an equivalent (and widely used) declaration is:
+int main (int argc, char **argv)<br>
+• When the program starts, the following conditions hold true:
+1. argc is greater than 0.<br>
+2. argv[argc] is a null pointer.<br>
+3. argv[0], argv[1], ..., argv[argc-1] are pointers to strings with
+implementation defined meanings.<br>
+4. argv[0] is a string which contains the program’s name, or is an
+empty string if the name isn’t available.<br>
+5. Remaining members of argv are the program’s arguments.<br>
+					
+				<br>	Example: print_args echoes its arguments to the standard output : form of echo command
+/* print_args.c: Echo command line arguments */<br>
+#include <stdio.h><br>
+#include <stdlib.h><br>
+int main(int argc, char **argv)<br>
+{<br>
+int i = 0 ;<br>
+int num_args ;<br>
+num_args=argc;<br>
+printf("No of arguments: %d\n",num_args);<br>
+while(num_args > 0)<br>
+{<br>
+printf("%s\t", argv[i]);<br>
+i++ ;<br>
+num_args--;<br>
+}<br>
+}<br>
+If the name of this program is print_args, an example of its execution is as follows:<br>
+Run as:<br>
+C:\Users\Acer\Desktop\Programs>print_args aaa bbb ccc<br>
+Output as:<br>
+No of arguments: 4<br>
+print_args aaa bbb ccc<br>
+					
+					
+					
+					<h3>File copy using command line</h3>
+					<br>/*Program: filecopy.c */<br>
+#include <stdio.h><br>
+#include <conio.h><br>
+#include <stdlib.h><br>
+Int main(int argc,char **argv)<br>
+{<br>
+FILE *fp1, *fp2;<br>
+int c ;<br>
+/*filenames are given in command line */<br>
+printf("Source File: %s , Destination file:<br>
+%s",argv[1],argv[2]);<br>
+fp1 = fopen( argv[1], "r" ); /* open for reading */<br>
+fp2 = fopen( argv[2], "w" ) ; /* open for writing */<br>
+if ( fp1 == NULL ) /* check does file exist etc */<br>
+{<br>
+printf("Cannot open %s for reading \n", argv[1] );<br>
+getch();<br>
+exit(1); /* terminate program */<br>
+}<br>
+else if ( fp2 == NULL )<br>
+{<br>
+printf("Cannot open %s for writing \n", argv[2] );<br>
+getch();<br>
+exit(1); /* terminate program */<br>
+}<br>
+					
+					
+					else /* both files O.K. */<br>
+{<br>
+c = getc(fp1) ; /* read from source*/<br>
+while ( c != EOF)<br>
+{<br>
+putc( c, fp2); /* copy to
+destination */<br>
+c = getc( fp1 ) ;<br>
+}<br>
+fclose ( fp1 ); /* Now close files */<br>
+fclose ( fp2 );<br>
+printf("Files successfully copied \n");<br>
+}<br>
+getch();<br>
+return 0;<br>
+} /*end of main()*/<br>
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+					
+					<h3>Ramdom Access in File</h3>
+					
+					<br>• Random access means you can move to any part
+of a file and read or write data from it without
+having to read through the entire file.<br>
+• There is no need to read each record sequentially,
+if we want to access a particular record.C supports
+these functions for random access file processing.<br>
+• Functions used for random access file are<br>
+– fseek()<br>
+– ftell()<br>
+– rewind()<br>
+					
+					<h3>fseek()</h3>
+					• This function is used for seeking the pointer position in the file at the specified byte.<br>
+Syntax:<br>
+• fseek( file pointer, displacement, pointer position);<br>
+Where<br>
+• file pointer ---- It is the pointer which points to the file.<br>
+• displacement ---- It is positive or negative. This is the number
+of bytes which are skipped backward (if negative) or forward(
+if positive) from the current position. This is attached with L
+because this is a long integer.<br>
+• Pointer position: This sets the pointer position in the file.<br>
+SEEK_SET Seeks from beginning of file<br>
+SEEK_CUR Seeks from current position<br>
+SEEK_END Seeks from end of file<br>
+Eauivalently,<br>
+Value || pointer position<br>
+0 || Beginning of file.<br>
+1 || Current position<br>
+2 || End of file<br>
+					
+					<br>1) fseek( p,10L,0) or fseek(fp,10L, SEEK_SET);<br>
+0 means pointer position is on beginning of the file,from this statement pointer
+position is skipped 10 bytes from the beginning of the file.<br>
+2)fseek( p,5L,1) or fseek(fp,5L,SEEK_CUR);<br>
+1 means current position of the pointer position.From this statement pointer
+position is skipped 5 bytes forward from the current position.<br>
+3)fseek(p,-5L,1) or fseek(fp,-5L,SEEK_CUR);<br>
+From this statement pointer position is skipped 5 bytes backward from the
+current position.<br>
+					
+					
+					<h3>ftell()</h3>
+					offset = ftell( file pointer );<br>
+"ftell" returns the current position for input or output on the file<br>
+#include <stdio.h><br>
+int main(void)<br>
+{<br>
+FILE *stream;<br>
+stream = fopen("MYFILE.TXT", "w");<br>
+fprintf(stream, "This is a test");<br>
+printf("The file pointer is at byte %ld\n", ftell(stream));<br>
+fclose(stream);<br>
+return 0;<br>
+}<br>
+					
+					<h3>Write a program to read last ‘n’ characters of the file using appropriate file
+functions(Here we need fseek() and fgetc()). </h3>
+					
+#include<stdio.h><br>
+#include<conio.h><br>
+int main()<br>
+{<br>
+FILE *fp;<br>
+char ch;<br>
+int n;<br>
+fp=fopen("file1.c", "r");<br>
+if(fp==NULL)<br>
+printf("file cannot be opened");<br>
+else<br>
+{<br>
+printf("Enter value of n to read last ‘n’ characters");<br>
+scanf("%d",&n);<br>
+fseek(fp,-n,2); /*SEEK_END */<br>
+while((ch=fgetc(fp))!=EOF)<br>
+{<br>
+printf("%c\t",ch);<br>
+}<br>
+}<br>
+fclose(fp);<br>
+getch();<br>
+return 0;<br>
+}<br>
+					<h3>
+Write a ‘C’ program to read a text file and print the text in reverse order.
+						</h3>
+#include<stdio.h><br>
+#include<stdlib.h><br>
+#include<conio.h><br>
+main()<br>
+{<br>
+FILE *fp;<br>
+char ch;<br>
+int i,pos;<br>
+fp=fopen("record.txt","r+");<br>
+fseek(fp,1,SEEK_END);<br>
+pos=ftell(fp);<br>
+i=0;<br>
+while(i<=pos)<br>
+{<br>
+ch=fgetc(fp);<br>
+printf("%c",ch);<br>
+fseek(fp,-i,SEEK_END);<br>
+i++;<br>
+}<br>
+getch();<br>
+}<br><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- csit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3847456434911475"
+     data-ad-slot="6735669592"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+					</p>
+						
+						</div>
+					
+						
+						
 						<button type="submit"><a href="https://drive.google.com/open?id=1e3kSJTeNhCUduByVnWwlIgLAD9EwHuuK">Download Now !!</a></button>
 						
 					
@@ -133,6 +847,7 @@ Use of continue in while, do while, and for loop">
 							<li><a href="c_programming4.html">4. Operators and Expression</a></li>
 							<li><a href="c_programming5.html">5. Control Statemet</a></li>
 							<li><a href="c_programming6.html">6. File Handling</a></li>
+								<li><a href="c_programming7.html">7. Introduction to graphics</a></li>
 						</ul>
 					</div>
 					<div class="sb-widget-item">
